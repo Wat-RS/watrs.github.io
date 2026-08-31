@@ -215,6 +215,8 @@ Surface water and groundwater are often managed as separate resources, but inmos
 
 ## Integrated Remote Sensing Analysis
 
+![](images/clipboard-2717497297.png){width="400"}
+
 ::: {.callout-note collapse="true"}
 ## Project information
 
