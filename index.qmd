@@ -111,7 +111,7 @@ Hello! My name is Alex Bevington. I am an Assistant Professor in [Geography, Ear
 
 Before joining UNBC I spent a decade with the BC Ministry of Forests as a Research Earth Scientist and then Research Hydrologist, work that still shapes how the lab operates: applied, open, and built around data that practitioners can actually use.
 
-I lead the **Watershed Remote Sensing Lab (Wat-RS)**. The motivation of the lab is to tackle wicked problems in the world of water security and public safety, and contribute to solutions with science and research.
+I lead the **Watershed Remote Sensing Lab**. The motivation of the lab is to tackle wicked problems in the world of water security and public safety, and contribute to solutions with science and research.
 
 # Current Projects
 
