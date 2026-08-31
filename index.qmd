@@ -147,9 +147,11 @@ Before joining UNBC I spent a decade with the BC Ministry of Forests as a Resear
 
 I lead the **Watershed Remote Sensing Lab**. The motivation of the lab is to tackle wicked problems in the world of water security and public safety, and contribute to solutions with science and research.
 
-# Current Projects
+# Projects and themes
 
 ## RemoteLogger for Model Validation
+
+![](images/clipboard-1782195955.png){width="400"}
 
 ::: {.callout-note collapse="true"}
 ## Project information
@@ -161,6 +163,8 @@ We are developing modular, low-cost, and low-power data loggers for hydrological
 
 ## watershedBC for Decision Support
 
+![](images/clipboard-3184765564.png){width="400"}
+
 ::: {.callout-note collapse="true"}
 ## Project information
 
@@ -169,7 +173,9 @@ We are developing modular, low-cost, and low-power data loggers for hydrological
 WatershedBC is an open-access decision-support tool that enables users to quickly visualize and extract key information about watersheds across British Columbia. Designed for practitioners, researchers, and the public, it leverages provincial datasets and automated workflows to deliver insights on hydrology, land cover, and climate attributes at nested watershed scales. The goal is to create a framework for rapid watershed characterization that will evolve as new models and datasets emerge.
 :::
 
-## Keeping up with Rapid Cryospheric Change
+## Rapid Cryospheric Change
+
+![](images/clipboard-2542900776.png){width="400"}
 
 ::: {.callout-note collapse="true"}
 ## Project information
@@ -179,13 +185,17 @@ The cryosphere---including glaciers, seasonal snow, and permafrost---is one of t
 
 ## Understanding Mountain Hazards
 
+![](images/clipboard-862481009.png){width="400"}
+
 ::: {.callout-note collapse="true"}
 ## Project information
 
 Landslide and flood hazards represent a significant risk to infrastructure and communities, particularly in mountainous terrain. This project focuses on building robust remote sensing workflows using, for example InSAR from Sentinel-1, RADARSAT Constellation Mission, and future missions (e.g., NASA--ISRO NISAR) to detect and track precursory slope deformation. Our objective is to transition InSAR from a research tool into an operational, near-real-time monitoring system that can support emergency management and land-use planning.
 :::
 
-## Water Temperature of Freshwater Systems
+## Temperature of Freshwater Systems
+
+![](images/clipboard-3846407789.png){width="400"}
 
 ::: {.callout-note collapse="true"}
 ## Project information
@@ -194,6 +204,8 @@ Water temperature regulates ecological processes and habitat viability for fish 
 :::
 
 ## Shallow Surface Water and Groundwater Interactions
+
+![](images/clipboard-1709231646.png){width="400"}
 
 ::: {.callout-note collapse="true"}
 ## Project information
