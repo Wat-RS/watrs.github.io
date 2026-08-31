@@ -96,4 +96,4 @@ format:
     link-external-newwindow: true
     lightbox: true
 
-editor: source
+editor: visual
