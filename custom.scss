@@ -440,13 +440,22 @@ main {
   color: $watrs-mute;
 }
 
-// On narrow screens Quarto drops the margin column into the flow; the panel
-// should then be a normal block, not a short sticky box.
-@media (max-width: 991px) {
+// Below Quarto's 992px breakpoint the margin column drops into the body flow.
+// Two things then need fixing: the panel should be a normal block rather than a
+// short scroll box, and it should read last. Its position in the source puts it
+// above the intro, but <main> is a grid and the panel is a direct child of it,
+// so `order` moves it to the end without moving it in index.qmd (which would
+// drag it down the margin on desktop too).
+@media (max-width: 991.98px) {
+  main.page-columns > .column-margin:has(.news-scroll) {
+    order: 99;
+  }
+
   .news-scroll {
     max-height: none;
     overflow-y: visible;
     font-size: 0.85rem;
+    margin-top: 2rem;
   }
 }
 
