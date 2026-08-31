@@ -8,32 +8,29 @@ number-sections: false
 engine: knitr
 ---
 
-[ORCID 0000-0002-9249-4444](https://orcid.org/0000-0002-9249-4444) · 
-[Google Scholar](https://scholar.google.com/citations?user=5SVDaREAAAAJ&hl=en) ·
-[ResearchGate](https://www.researchgate.net/profile/Alexandre-Bevington) ·
-[Zenodo](https://zenodo.org/search?q=Bevington)
+[ORCID 0000-0002-9249-4444](https://orcid.org/0000-0002-9249-4444) · [Google Scholar](https://scholar.google.com/citations?user=5SVDaREAAAAJ&hl=en) · [ResearchGate](https://www.researchgate.net/profile/Alexandre-Bevington) · [Zenodo](https://zenodo.org/search?q=Bevington)
 
 Last updated `r format(lubridate::today(), "%d %B %Y")`.
 
 # Peer-reviewed journal articles
 
-1. Olivia, M.-L., N. Brown, ..., **A.R. Bevington**, ... and S. Gruber. 2026. [A standardized permafrost ground temperature collection for Canada](https://doi.org/10.5194/essd-2026-96). *Earth System Science Data.* **(Preprint)**
+1.  Olivia, M.-L., N. Brown, ..., **A.R. Bevington**, ... and S. Gruber. 2026. [A standardized permafrost ground temperature collection for Canada](https://doi.org/10.5194/essd-2026-96). *Earth System Science Data.* **(Preprint)**
 
-2. Garibaldi, M.C., P.P. Bonaventure, R.G. Way, **A.R. Bevington**, S.L. Smith, S.F. Lamoureux, J.E. Holloway, A.G. Lewkowicz and H. Ackerman. 2026. [Determining TTOP model parameter importance and overall performance across northern Canada](https://doi.org/10.5194/tc-20-2375-2026). *The Cryosphere, 20, 2375--2392.*
+2.  Garibaldi, M.C., P.P. Bonaventure, R.G. Way, **A.R. Bevington**, S.L. Smith, S.F. Lamoureux, J.E. Holloway, A.G. Lewkowicz and H. Ackerman. 2026. [Determining TTOP model parameter importance and overall performance across northern Canada](https://doi.org/10.5194/tc-20-2375-2026). *The Cryosphere, 20, 2375--2392.*
 
-3. Song, Y., **A.R. Bevington**, K.N. Reid, J. Zhu, Y. Liu and K. Zhu. 2026. [BatchPlanet: Batch access and processing of PlanetScope imagery for spatiotemporal analysis in R](https://doi.org/10.21105/joss.09268). *Journal of Open Source Software, 11(119), 9268.*
+3.  Song, Y., **A.R. Bevington**, K.N. Reid, J. Zhu, Y. Liu and K. Zhu. 2026. [BatchPlanet: Batch access and processing of PlanetScope imagery for spatiotemporal analysis in R](https://doi.org/10.21105/joss.09268). *Journal of Open Source Software, 11(119), 9268.*
 
-4. **Bevington, A.R.**, B. Menounos and M. Ednie. 2026. [Satellite telemetry of surface ablation to inform spatial melt modelling and event-scale monitoring, Place Glacier, Canada](https://doi.org/10.5194/tc-20-811-2026). *The Cryosphere, 20, 811--833.*
+4.  **Bevington, A.R.**, B. Menounos and M. Ednie. 2026. [Satellite telemetry of surface ablation to inform spatial melt modelling and event-scale monitoring, Place Glacier, Canada](https://doi.org/10.5194/tc-20-811-2026). *The Cryosphere, 20, 811--833.*
 
-5. **Bevington, A.R.** and B. Menounos. 2025. [Glaciers in western North America and Alaska experience exceptional rise of transient snowlines over the satellite era](https://doi.org/10.1088/1748-9326/adc9ca). *Environmental Research Letters.*
+5.  **Bevington, A.R.** and B. Menounos. 2025. [Glaciers in western North America and Alaska experience exceptional rise of transient snowlines over the satellite era](https://doi.org/10.1088/1748-9326/adc9ca). *Environmental Research Letters.*
 
-6. Mumma, M., **A.R. Bevington**, S. Marshall and M. Gillingham. 2024. [Delineating wildfire burns and regrowth using satellite imagery to assess moose (*Alces*) spatial responses to burns](https://doi.org/10.1002/ecs2.4793). *Ecosphere.*
+6.  Mumma, M., **A.R. Bevington**, S. Marshall and M. Gillingham. 2024. [Delineating wildfire burns and regrowth using satellite imagery to assess moose (*Alces*) spatial responses to burns](https://doi.org/10.1002/ecs2.4793). *Ecosphere.*
 
-7. Herring, T., A.G. Lewkowicz, ..., **A.R. Bevington**, ... and C.M. Miceli. 2024. [The Canadian Permafrost Electrical Resistivity Survey Database (CPERS): 15 years of permafrost resistivity data](https://doi.org/10.1139/as-2023-0058). *Arctic Science.*
+7.  Herring, T., A.G. Lewkowicz, ..., **A.R. Bevington**, ... and C.M. Miceli. 2024. [The Canadian Permafrost Electrical Resistivity Survey Database (CPERS): 15 years of permafrost resistivity data](https://doi.org/10.1139/as-2023-0058). *Arctic Science.*
 
-8. Griesbauer, H. and **A.R. Bevington**. 2024. [Recent changes in forest structure and growth at the alpine-treeline ecotone in the Rocky and Columbia Mountains of central British Columbia, Canada](https://doi.org/10.1111/jbi.14778). *Journal of Biogeography.*
+8.  Griesbauer, H. and **A.R. Bevington**. 2024. [Recent changes in forest structure and growth at the alpine-treeline ecotone in the Rocky and Columbia Mountains of central British Columbia, Canada](https://doi.org/10.1111/jbi.14778). *Journal of Biogeography.*
 
-9. **Bevington, A.R.** and B. Menounos. 2022. [Accelerated change in the glaciated environments of western Canada revealed through trend analysis of optical satellite imagery](https://doi.org/10.1016/j.rse.2021.112862). *Remote Sensing of Environment.*
+9.  **Bevington, A.R.** and B. Menounos. 2022. [Accelerated change in the glaciated environments of western Canada revealed through trend analysis of optical satellite imagery](https://doi.org/10.1016/j.rse.2021.112862). *Remote Sensing of Environment.*
 
 10. Mumma, M.A., M.P. Gillingham, S. Marshall, C. Procter, **A.R. Bevington** and M. Scheideman. 2021. [Regional moose (*Alces*) responses to forestry cutblocks are driven by landscape-scale patterns of vegetation composition and regrowth](https://doi.org/10.1016/j.foreco.2020.118763). *Forest Ecology and Management, 481, 1--11.*
 
@@ -67,63 +64,73 @@ Last updated `r format(lubridate::today(), "%d %B %Y")`.
 
 # Book chapters
 
-1. Menounos, B., **A.R. Bevington** and M. Geertsema. 2018. [Glacier Environments](https://doi.org/10.1007/978-3-319-73568-9_143). In: *Encyclopedia of Engineering Geology.* P.T. Bobrowsky and B. Marker (eds.).
+1.  Menounos, B., **A.R. Bevington** and M. Geertsema. 2018. [Glacier Environments](https://doi.org/10.1007/978-3-319-73568-9_143). In: *Encyclopedia of Engineering Geology.* P.T. Bobrowsky and B. Marker (eds.).
 
-2. **Bevington, A.R.**, M.-A. Brideau and M. Geertsema. 2017. [Mountain Environments](https://doi.org/10.1007/978-3-319-73568-9_209). In: *Encyclopedia of Engineering Geology.* P.T. Bobrowsky and B. Marker (eds.).
+2.  **Bevington, A.R.**, M.-A. Brideau and M. Geertsema. 2017. [Mountain Environments](https://doi.org/10.1007/978-3-319-73568-9_209). In: *Encyclopedia of Engineering Geology.* P.T. Bobrowsky and B. Marker (eds.).
 
-3. **Bevington, A.R.**, J.J. Clague, T. Millard, I.J. Walker and M. Geertsema. 2017. [The Diverse Landscapes of Haida Gwaii](https://doi.org/10.1007/978-3-319-44595-3_21). In: *Landscapes and Landforms of Western Canada.* O. Slaymaker (ed.).
+3.  **Bevington, A.R.**, J.J. Clague, T. Millard, I.J. Walker and M. Geertsema. 2017. [The Diverse Landscapes of Haida Gwaii](https://doi.org/10.1007/978-3-319-44595-3_21). In: *Landscapes and Landforms of Western Canada.* O. Slaymaker (ed.).
 
 # Refereed conference proceedings
 
-1. Way, R., Y. Wang, **A.R. Bevington**, P.P. Bonnaventure, J.R. Burton, E. Davis, M.C. Garibaldi, C.M. Lapalme, R. Tutton and M.A.E. Wehbe. 2021. [Consensus-based rock glacier inventorying in the Torngat Mountains, northern Labrador](https://doi.org/10.1061/9780784483589.012). *Permafrost 2021: Merging Permafrost Science and Cold Regions Engineering.*
+1.  Way, R., Y. Wang, **A.R. Bevington**, P.P. Bonnaventure, J.R. Burton, E. Davis, M.C. Garibaldi, C.M. Lapalme, R. Tutton and M.A.E. Wehbe. 2021. [Consensus-based rock glacier inventorying in the Torngat Mountains, northern Labrador](https://doi.org/10.1061/9780784483589.012). *Permafrost 2021: Merging Permafrost Science and Cold Regions Engineering.*
 
-2. **Bevington, A.R.** and A.G. Lewkowicz. 2015. [Assessment of a land cover driven TTOP model for mountain and lowland permafrost using field data, southern Yukon and northern British Columbia, Canada](https://www.researchgate.net/publication/282649555_Assessment_of_a_land_cover_driven_TTOP_model_for_mountain_and_lowland_permafrost_using_field_data_southern_Yukon_and_northern_British_Columbia_Canada). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
+2.  **Bevington, A.R.** and A.G. Lewkowicz. 2015. [Assessment of a land cover driven TTOP model for mountain and lowland permafrost using field data, southern Yukon and northern British Columbia, Canada](https://www.researchgate.net/publication/282649555_Assessment_of_a_land_cover_driven_TTOP_model_for_mountain_and_lowland_permafrost_using_field_data_southern_Yukon_and_northern_British_Columbia_Canada). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
 
-3. Smith, S.L., A.G. Lewkowicz, M. Ednie, M. Duguay and **A.R. Bevington**. 2015. [Characterization of permafrost thermal state in the southern Yukon](https://www.researchgate.net/publication/312623215_Characterization_of_Permafrost_Thermal_State_in_the_Southern_Yukon). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
+3.  Smith, S.L., A.G. Lewkowicz, M. Ednie, M. Duguay and **A.R. Bevington**. 2015. [Characterization of permafrost thermal state in the southern Yukon](https://www.researchgate.net/publication/312623215_Characterization_of_Permafrost_Thermal_State_in_the_Southern_Yukon). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
 
-4. Brideau, M.-A., **A.R. Bevington**, A.G. Lewkowicz and D. Stead. 2015. [Engineering geology, electrical resistivity tomography and displacement monitoring of the Dawson City Landslide, Yukon](https://www.researchgate.net/publication/281939062_Engineering_Geology_Electrical_Resistivity_Tomography_and_Displacement_Monitoring_of_the_Dawson_City_Landslide_Yukon). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
+4.  Brideau, M.-A., **A.R. Bevington**, A.G. Lewkowicz and D. Stead. 2015. [Engineering geology, electrical resistivity tomography and displacement monitoring of the Dawson City Landslide, Yukon](https://www.researchgate.net/publication/281939062_Engineering_Geology_Electrical_Resistivity_Tomography_and_Displacement_Monitoring_of_the_Dawson_City_Landslide_Yukon). *GEOQuebec 2015 and 7th Canadian Permafrost Conference, Quebec City.*
 
 # Data and software publications
 
-1. **Bevington, A.** 2026. [Place Glacier smart ablation stake data (2024)](https://doi.org/10.5281/zenodo.18392420). *Zenodo.*
-2. **Bevington, A.** 2026. [RemoteLogger code and wiring diagram for glacier monitoring](https://doi.org/10.5281/zenodo.18392144). *Zenodo.*
-3. **Bevington, A.** and B. Menounos. 2025. [Glaciers in western North America experience exceptional transient snowline rise over satellite era](https://doi.org/10.5281/zenodo.13755650). *Zenodo.*
-4. **Bevington, A.R.**, C. Mathias and B. Menounos. 2024. [Glacier Inventory of British Columbia](https://catalogue.data.gov.bc.ca/dataset/glaciers). *BC Data Catalogue.*
-5. **Bevington, A.R.** and B. Menounos. 2021. [Accelerated change in the glaciated environments of western Canada revealed through trend analysis of optical satellite imagery (polygons), v2](https://doi.org/10.5281/zenodo.5900363). *Zenodo.*
+1.  **Bevington, A.** 2026. [Place Glacier smart ablation stake data (2024)](https://doi.org/10.5281/zenodo.18392420). *Zenodo.*
+2.  **Bevington, A.** 2026. [RemoteLogger code and wiring diagram for glacier monitoring](https://doi.org/10.5281/zenodo.18392144). *Zenodo.*
+3.  **Bevington, A.** and B. Menounos. 2025. [Glaciers in western North America experience exceptional transient snowline rise over satellite era](https://doi.org/10.5281/zenodo.13755650). *Zenodo.*
+4.  **Bevington, A.R.**, C. Mathias and B. Menounos. 2024. [Glacier Inventory of British Columbia](https://catalogue.data.gov.bc.ca/dataset/glaciers). *BC Data Catalogue.*
+5.  **Bevington, A.R.** and B. Menounos. 2021. [Accelerated change in the glaciated environments of western Canada revealed through trend analysis of optical satellite imagery (polygons), v2](https://doi.org/10.5281/zenodo.5900363). *Zenodo.*
 
 # Publicly available technical reports
 
-3. **Bevington, A.R.**, H. Gleason and V.N. Foord. 2020. [Snow cover timing from satellite imagery: opportunities for near-real-time mapping and seasonal forecasting](http://a100.gov.bc.ca/pub/eirs/viewDocumentDetail.do?fromStatic=true&repository=BDP&documentId=13100). *BC Technical Report 129.* Province of British Columbia, Victoria, BC.
-11. Perrin, A., S. Eng, E. Sparling, H. Auld, N. Comer, **A.R. Bevington** and L. Kinnear. 2015. [Enhancing knowledge transfer to decision-makers with respect to climate change impacts on the cryosphere](http://dx.doi.org/10.13140/RG.2.2.30662.68168). Yukon Research Centre, Yukon College.
+3.  **Bevington, A.R.**, H. Gleason and V.N. Foord. 2020. [Snow cover timing from satellite imagery: opportunities for near-real-time mapping and seasonal forecasting](http://a100.gov.bc.ca/pub/eirs/viewDocumentDetail.do?fromStatic=true&repository=BDP&documentId=13100). *BC Technical Report 129.* Province of British Columbia, Victoria, BC.
+4.  Perrin, A., S. Eng, E. Sparling, H. Auld, N. Comer, **A.R. Bevington** and L. Kinnear. 2015. [Enhancing knowledge transfer to decision-makers with respect to climate change impacts on the cryosphere](http://dx.doi.org/10.13140/RG.2.2.30662.68168). Yukon Research Centre, Yukon College.
 
 # Conference presentations
 
-1. Roknaldini, B., S. Islam, B. O'Connor, **A.R. Bevington** and E. Martins. 2024. Investigating the use of machine learning and hybrid models to develop a Water Temperature Prediction System (WTPS) for northern British Columbia, Canada. *American Geophysical Union Fall Meeting.*
-2. Lewkowicz, A., T. Herring, M. Duguay, **A.R. Bevington** and S. Smith. 2023. Changing discontinuous permafrost evaluated using repeat electrical resistivity tomography, northwest Canada. *European Conference on Permafrost.*
-3. **Bevington, A.R.**, H. Gleason, V. Kingsley, S. Islam, B. O'Connor, E. Mason, C. van Geloven, R. Rolick, M. Whyte and I. Ruttenberg. 2023. Arduino-based hydrometric stations for low-cost real-time data transmission in remote areas of northern British Columbia. *BC Ministry of Forests Research Program.*
-4. **Bevington, A.R.** 2023. The highs and lows of DIY hydrometrics. *BC Government Climate Related Monitoring Program.*
-5. **Bevington, A.R.** 2023. The RISC of DIY hydrometrics: Arduino, databases and open-source apps. *BC Government Surface Water Community of Practice.*
-6. Barnes, K., S. Islam, B. O'Connor and **A.R. Bevington**. 2023. Assessing thermal habitat conditions in the Parsnip River Basin, British Columbia. *UNBC Research Week.*
-7. **Bevington, A.R.** 2022. Remote sensing research and operations in the BC Government. *SparkGeo Data Guild.*
-8. Gleason, H. and **A.R. Bevington**. 2022. Under the radar: real-time hydrometric monitoring for under $1000. *BC Government Surface Water Community of Practice.*
-9. **Bevington, A.R.** 2022. Using the `lakemorpho` package to estimate pseudo-bathymetry. *BC Government R Water Community of Practice.*
-10. Menounos, B., F.S. Anslow, **A.R. Bevington**, C. Onwukwe, J. Townend, D. Heathfield, J.M. Shea, S. Darychuk, D.H. Shugar, G.E. Flowers and P.L. Jackson. 2021. [Cryospheric response to the June 2021 Heat Dome](https://ui.adsabs.harvard.edu/abs/2021AGUFM.C54C..06M/abstract). *American Geophysical Union Fall Meeting, San Francisco.*
-11. **Bevington, A.R.** and B. Menounos. 2020. [Accelerated glacier loss in western Canada revealed through trend analysis of optical satellite imagery](https://ui.adsabs.harvard.edu/abs/2020AGUFMC042...10B/abstract). *American Geophysical Union Fall Meeting.*
-12. **Bevington, A.R.** 2020. Google Earth Engine QGIS plugin: a brief introduction. *BC Government GIS Community of Practice.*
-13. **Bevington, A.R.** 2020. Making maps with R. *BC Government R User Group.*
-14. **Bevington, A.R.** 2020. Remote sensing and forest health: research or operations? *BC Government Forest Health Team.*
-15. Shugar, D.H., A. Burr, U.K. Haritashya, J.S. Kargel, S. Watson, M.C. Kennedy, **A.R. Bevington**, R.A. Betts, S. Harrison and K. Strattman. 2019. [Recent doubling of mid- and low-latitude glacial lakes](https://ui.adsabs.harvard.edu/abs/2019AGUFM.C21B.02S/abstract). *American Geophysical Union Fall Meeting, San Francisco.*
-16. **Bevington, A.R.** 2019. Reproducible workflows in satellite remote sensing. *BC Government Data Science Community of Practice Demo Day, Victoria, BC.*
-17. **Bevington, A.R.** 2019. Satellite remote sensing in the BC Government: progress and challenges. *BC Government GIS Community of Practice, Vancouver, BC.*
-18. **Bevington, A.R.** 2018. Using satellite remote sensing for the quantification of surface water storage changes caused by the oil and gas sector in northeastern British Columbia. *BC Government Hydraulic Fracturing Independent Review Panel, Vancouver, BC.*
-19. **Bevington, A.R.** 2018. [When I fly, I always take the window seat](https://youtu.be/WBWnnkhrCIA). *BC Government Research Talks, Victoria, BC.*
-20. **Bevington, A.R.** 2017. A tour of the mountain cryosphere of British Columbia. *Remote Sensing Research Seminar, University of Oslo, Norway.*
-21. **Bevington, A.R.** and B. Menounos. 2017. Glacier area change in British Columbia over 31 years of satellite imagery using Google Earth Engine. *European Space Agency 7th Advanced Land Remote Sensing Workshop, Gödöllő, Hungary.*
-22. **Bevington, A.R.** and B. Menounos. 2017. Glacier area change in British Columbia over 31 years of satellite imagery. *Canadian Geophysical Union, Vancouver, BC.*
-23. **Bevington, A.R.** 2017. The democratization of satellite remote sensing: implications for the people of British Columbia. *Science Week, Prince George Public Library, BC.*
-24. **Bevington, A.R.** and M. Geertsema. 2016. Landslide response to the 27 October 2012 earthquake (Mw 7.7), Gwaii Haanas National Park Reserve and Haida Heritage Site, Haida Gwaii, BC. *GAC-MAC Annual Meeting, Whitehorse, YT.*
-25. **Bevington, A.R.** and M. Geertsema. 2016. Using remote sensing products to detect geohazards in the mountainous regions of northern British Columbia. *GAC-MAC Annual Meeting, Whitehorse, YT.*
-26. **Bevington, A.R.** 2016. Professional development workshop: remote sensing for natural resource practitioners. *BCIA Annual General Meeting, Prince George, BC.*
-27. **Bevington, A.R.** 2016. Satellite remote sensing for the natural sciences. *BC Government Provincial Hydro/Geo Technical Working Group, Prince George, BC.*
-29. **Bevington, A.R.**, M. van der Kooij, M. Geertsema and C. Huggel. 2015. Detection and analysis of landslides following the 25 April 2015 Mw 7.8 Gorkha earthquake, Nepal, using RADARSAT-2 SAR data. *Canadian Space Agency ASAR Workshop, Montreal, QC.*
-
+1.  **Bevington, A.R.** 2026. *Watersheds and data.* Upper Fraser Fisheries Conservation Alliance Technical Advisory Committee.
+2.  **Bevington, A.R.** 2026. *Snow cover timing from satellite imagery.* Wild Sheep Foundation --- Thinhorn Summit IV, Prince George, BC.
+3.  **Bevington, A.R.** 2026. *Multi-sensor remote sensing for geohazard detection and monitoring.* Landscapes Through Time, UNBC, Prince George, BC.
+4.  **Bevington, A.R.** 2026. *Using PlanetScope satellite imagery to monitor water, snow and glacier ice in British Columbia.* [Planet Education and Research Seminar](https://www.planet.com/industries/education-and-research/).
+5.  **Bevington, A.R.** 2026. *From the Arctic to northern BC: recent observations from a hydrologist, geospatial scientist and overall optimist.* [NRESi Colloquium](https://video.unbc.ca/media/Alex+Bevington+-+From+the+Arctic+to+Northern+British+Columbia%3A+Recent+observations+from+the+perspective+of+a+hydrologist%2C+geospatial+scientist%2C+and+overall+optimist+-+NRESi+presentation+Friday+6+Feb+2026/0_4el4s9a8/23996), UNBC, Prince George, BC.
+6.  Roknaldini, B., S. Islam, B. O'Connor, **A.R. Bevington** and E. Martins. 2024. Investigating the use of machine learning and hybrid models to develop a Water Temperature Prediction System (WTPS) for northern British Columbia, Canada. *American Geophysical Union Fall Meeting.*
+7.  **Bevington, A.R.** 2024. *Tools for drought monitoring in northern rivers.* [Forest Practices Board of British Columbia webinar series](https://www.fpbc.ca/webinar-recordings/tools-drought-monitoring/).
+8.  Lewkowicz, A., T. Herring, M. Duguay, **A.R. Bevington** and S. Smith. 2023. Changing discontinuous permafrost evaluated using repeat electrical resistivity tomography, northwest Canada. *European Conference on Permafrost.*
+9.  **Bevington, A.R.**, H. Gleason, V. Kingsley, S. Islam, B. O'Connor, E. Mason, C. van Geloven, R. Rolick, M. Whyte and I. Ruttenberg. 2023. Arduino-based hydrometric stations for low-cost real-time data transmission in remote areas of northern British Columbia. *BC Ministry of Forests Research Program.*
+10. **Bevington, A.R.** 2023. The highs and lows of DIY hydrometrics. *BC Government Climate Related Monitoring Program.*
+11. O'Connor, B., S. Islam, **A.R. Bevington** and E. Martins. 2023. [*Investigating thermal regimes of the Upper Peace River Basin*](https://video.unbc.ca/media/FWCP%20-%20NRESi%20O%27Connor%20March%201%202023.mp4/0_df83hb0r/23996)*.* NRESi--FWCP, UNBC.
+12. **Bevington, A.R.** 2023. The RISC of DIY hydrometrics: Arduino, databases and open-source apps. *BC Government Surface Water Community of Practice.*
+13. Bevington, A.R. 2023. **Keynote:** *Realtime data from the field and from space.* Canadian Institute of Forestry banquet.
+14. Bevington, A.R. and B. Menounos. 2023. [*Observations of the transient snowline in western Canada*](https://www.youtube.com/watch?v=gRGdRI6voOQ)*.* Canadian Meteorological and Oceanographic Society.
+15. Barnes, K., S. Islam, B. O'Connor and **A.R. Bevington**. 2023. Assessing thermal habitat conditions in the Parsnip River Basin, British Columbia. *UNBC Research Week.*
+16. **Bevington, A.R.** 2022. Remote sensing research and operations in the BC Government. *SparkGeo Data Guild.*
+17. Gleason, H. and **A.R. Bevington**. 2022. Under the radar: real-time hydrometric monitoring for under \$1000. *BC Government Surface Water Community of Practice.*
+18. **Bevington, A.R.** 2022. Using the `lakemorpho` package to estimate pseudo-bathymetry. *BC Government R Water Community of Practice.*
+19. Menounos, B., F.S. Anslow, **A.R. Bevington**, C. Onwukwe, J. Townend, D. Heathfield, J.M. Shea, S. Darychuk, D.H. Shugar, G.E. Flowers and P.L. Jackson. 2021. [Cryospheric response to the June 2021 Heat Dome](https://ui.adsabs.harvard.edu/abs/2021AGUFM.C54C..06M/abstract). *American Geophysical Union Fall Meeting, San Francisco.*
+20. **Bevington, A.R.** and B. Menounos. 2020. [Accelerated glacier loss in western Canada revealed through trend analysis of optical satellite imagery](https://ui.adsabs.harvard.edu/abs/2020AGUFMC042...10B/abstract). *American Geophysical Union Fall Meeting.*
+21. **Bevington, A.R.** 2020. Google Earth Engine QGIS plugin: a brief introduction. *BC Government GIS Community of Practice.*
+22. **Bevington, A.R.** 2020. Making maps with R. *BC Government R User Group.*
+23. **Bevington, A.R.** 2020. Remote sensing and forest health: research or operations? *BC Government Forest Health Team.*
+24. Shugar, D.H., A. Burr, U.K. Haritashya, J.S. Kargel, S. Watson, M.C. Kennedy, **A.R. Bevington**, R.A. Betts, S. Harrison and K. Strattman. 2019. [Recent doubling of mid- and low-latitude glacial lakes](https://ui.adsabs.harvard.edu/abs/2019AGUFM.C21B.02S/abstract). *American Geophysical Union Fall Meeting, San Francisco.*
+25. **Bevington, A.R.** 2019. Reproducible workflows in satellite remote sensing. *BC Government Data Science Community of Practice Demo Day, Victoria, BC.*
+26. **Bevington, A.R.** 2019. Satellite remote sensing in the BC Government: progress and challenges. *BC Government GIS Community of Practice, Vancouver, BC.*
+27. Bevington, A.R. 2019. **Keynote:** [*The magic of remote sensing*](http://nsc-bc.org/wp-content/uploads/2019/03/Bevington.pdf)*.* Northern Silviculture Committee Winter Conference, Prince George, BC.
+28. **Bevington, A.R.** 2018. Using satellite remote sensing for the quantification of surface water storage changes caused by the oil and gas sector in northeastern British Columbia. *BC Government Hydraulic Fracturing Independent Review Panel, Vancouver, BC.*
+29. **Bevington, A.R.** 2018. [When I fly, I always take the window seat](https://youtu.be/WBWnnkhrCIA). *BC Government Research Talks, Victoria, BC.*
+30. **Bevington, A.R.** 2017. A tour of the mountain cryosphere of British Columbia. *Remote Sensing Research Seminar, University of Oslo, Norway.*
+31. **Bevington, A.R.** and B. Menounos. 2017. Glacier area change in British Columbia over 31 years of satellite imagery using Google Earth Engine. *European Space Agency 7th Advanced Land Remote Sensing Workshop, Gödöllő, Hungary.*
+32. **Bevington, A.R.** and B. Menounos. 2017. Glacier area change in British Columbia over 31 years of satellite imagery. *Canadian Geophysical Union, Vancouver, BC.*
+33. Bevington, A.R. 2017. [*The new landscape of satellite remote sensing*](https://www2.unbc.ca/events/44824/nresi-colloquium-new-landscape-satellite-remote-sensing-alex-bevington-bc-mflnrord-and-unbc-phd-student)*.* NRESi Colloquium, UNBC, Prince George, BC.
+34. **Bevington, A.R.** 2017. The democratization of satellite remote sensing: implications for the people of British Columbia. *Science Week, Prince George Public Library, BC.*
+35. **Bevington, A.R.** and M. Geertsema. 2016. Landslide response to the 27 October 2012 earthquake (Mw 7.7), Gwaii Haanas National Park Reserve and Haida Heritage Site, Haida Gwaii, BC. *GAC-MAC Annual Meeting, Whitehorse, YT.*
+36. **Bevington, A.R.** and M. Geertsema. 2016. Using remote sensing products to detect geohazards in the mountainous regions of northern British Columbia. *GAC-MAC Annual Meeting, Whitehorse, YT.*
+37. **Bevington, A.R.** 2016. Professional development workshop: remote sensing for natural resource practitioners. *BCIA Annual General Meeting, Prince George, BC.*
+38. **Bevington, A.R.** 2016. Satellite remote sensing for the natural sciences. *BC Government Provincial Hydro/Geo Technical Working Group, Prince George, BC.*
+39. **Bevington, A.R.**, M. van der Kooij, M. Geertsema and C. Huggel. 2015. Detection and analysis of landslides following the 25 April 2015 Mw 7.8 Gorkha earthquake, Nepal, using RADARSAT-2 SAR data. *Canadian Space Agency ASAR Workshop, Montreal, QC.*

@@ -64,13 +64,13 @@ website:
       - text: "<i class='ai ai-researchgate' role='img' aria-label='ResearchGate'></i>"
         href: https://www.researchgate.net/profile/Alexandre-Bevington
       - icon: github
-        href: https://github.com/bevingtona
+        href: https://github.com/Wat-RS
         aria-label: GitHub
-      - icon: twitter
-        href: https://twitter.com/abevingtona
-        aria-label: Twitter
+      # - icon: twitter
+      #   href: https://twitter.com/abevingtona
+      #   aria-label: Twitter
       - icon: linkedin
-        href: https://www.linkedin.com/in/bevingtona/
+        href: https://www.linkedin.com/company/142884678/
         aria-label: LinkedIn
   page-footer:
     center: "© Alexandre R. Bevington • Prince George, BC • Built with [Quarto](https://quarto.org)"
