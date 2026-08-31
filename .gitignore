@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.httr-oauth
+.bc_092b053_xl1m_utm10_2019.tif
+# Quarto
+/.quarto/
+
+**/*.quarto_ipynb
+
+# machine-specific editor config
+/.vscode/settings.json

@@ -1,0 +1,484 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------------------------
+// Wat-RS brand
+// Palette is drawn from northern-BC water: deep river teal, glacier ice, slate.
+// $watrs-deep matches the <meta name="theme-color"> already set in _quarto.yml.
+// ---------------------------------------------------------------------------
+$watrs-deep:  #0b6a88;
+$watrs-dark:  #084b61;
+$watrs-mid:   #3d90a8;
+$watrs-ice:   #e3f0f5;
+$watrs-slate: #2e3d44;
+$watrs-mute:  #6b7c85;
+
+$primary:     $watrs-deep;
+$body-color:  $watrs-slate;
+$link-color:  $watrs-deep;
+$link-hover-color: $watrs-dark;
+
+// Fonts are loaded via <link> in _quarto.yml (faster than an @import here).
+$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:   "Source Serif 4", Georgia, "Times New Roman", serif;
+$headings-font-weight:   600;
+$headings-color:         $watrs-dark;
+
+$font-size-root: 17px;
+$line-height-base: 1.6;
+
+// A real, monotonically decreasing type scale. The previous styles.css had
+// h3/h4 at 20px and h1 at 20px, so sub-headings rendered larger than parents.
+$h1-font-size: 2.0rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.2rem;
+$h4-font-size: 1.05rem;
+$h5-font-size: 0.95rem;
+$h6-font-size: 0.85rem;
+
+// The logo is dark ink on a white ground, so the navbar is pure white: any
+// tint would show the logo PNG's own white background as a rectangle.
+$navbar-bg: #ffffff;
+$navbar-fg: $watrs-slate;
+$navbar-hl: $watrs-deep;
+$footer-bg: $watrs-ice;
+$footer-fg: $watrs-slate;
+
+$border-radius: 0.4rem;
+
+/*-- scss:rules --*/
+
+// --- Navbar ----------------------------------------------------------------
+// White navbar on a white page needs its own edge, and the brand lockup runs
+// taller than Quarto's 24px default for .navbar-logo.
+
+.navbar {
+  border-bottom: 1px solid rgba($watrs-deep, 0.2);
+  box-shadow: 0 1px 4px rgba($watrs-slate, 0.07);
+}
+
+// Quarto stamps data-bs-theme="dark" on the <nav> regardless of $navbar-bg,
+// which flips Bootstrap's dark colour variables for everything nested inside
+// it — most visibly the dropdown menus and the search overlay. With a white
+// navbar those have to be light again.
+.navbar[data-bs-theme="dark"],
+nav.quarto-secondary-nav[data-bs-theme="dark"] {
+  color-scheme: light;
+  --bs-body-color: #{$body-color};
+  --bs-body-bg: #ffffff;
+  --bs-emphasis-color: #000000;
+  --bs-secondary-color: #{rgba($watrs-slate, 0.75)};
+  --bs-secondary-bg: #e9ecef;
+  --bs-tertiary-color: #{rgba($watrs-slate, 0.5)};
+  --bs-tertiary-bg: #f8f9fa;
+  --bs-heading-color: #{$watrs-dark};
+  --bs-link-color: #{$watrs-deep};
+  --bs-link-hover-color: #{$watrs-dark};
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+// Quarto's default is object-fit: cover with a 48px cap, which would crop the
+// lockup if the navbar ever got shorter than the image.
+.navbar-logo {
+  max-height: 46px;
+  min-height: 0;
+  width: auto;
+  object-fit: contain;
+  padding-right: 0;
+  margin-right: 0.9rem;
+}
+
+// Sans, to sit with the logo's own wordmark rather than against it.
+.navbar-title {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.015em;
+  line-height: 1.15;
+  color: $watrs-dark;
+}
+
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link {
+  color: rgba($watrs-slate, 0.88);
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $watrs-deep;
+  }
+}
+
+// Icon links on the right sit in brand teal rather than body slate.
+.navbar .nav-link .bi,
+.navbar .nav-link .ai {
+  color: $watrs-deep;
+}
+
+// The collapsed (mobile) menu inherits the white ground.
+.navbar-toggler {
+  border-color: rgba($watrs-slate, 0.25);
+}
+
+// The logo already reads as the wordmark; below ~1200px drop the repeated
+// text so the menus never wrap onto a second line.
+@media (max-width: 1199px) {
+  .navbar-title { display: none; }
+}
+
+
+// --- Page rhythm -----------------------------------------------------------
+
+main {
+  h2 {
+    margin-top: 2.4rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba($watrs-deep, 0.18);
+  }
+  h3 { margin-top: 1.6rem; }
+}
+
+// --- Hero banner -----------------------------------------------------------
+// Drop a wide photo at images/hero.jpg (~2000px wide) and it appears here.
+// Until then the teal gradient underneath shows on its own — no broken image.
+
+.hero {
+  position: relative;
+  margin: -1.5rem 0 2rem;
+  padding: 0;
+  height: clamp(180px, 30vw, 340px);
+  border-radius: $border-radius;
+  overflow: hidden;
+  background-color: $watrs-dark;
+  background-image: linear-gradient(135deg, $watrs-dark 0%, $watrs-mid 55%, #7fb8c9 100%);
+  background-size: cover;
+  background-position: center 60%;
+
+  // To use a photo instead, add the file and set it inline on the div in
+  // index.qmd (SCSS url() refs make Quarto fail when the file is absent):
+  //   ::: {.hero style="background-image: linear-gradient(135deg, rgba(8,75,97,.7), rgba(61,144,168,.45)), url('images/hero.jpg');"}
+}
+
+// Photo heroes need the dark scrim; the gradient hero does not.
+.hero[style] .hero-text {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.hero-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.25rem 1.5rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
+
+  .hero-title {
+    font-family: $headings-font-family;
+    font-size: clamp(1.4rem, 3.2vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #fff;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    opacity: 0.92;
+    margin-top: 0.2rem;
+  }
+}
+
+// --- Intro block: portrait beside the bio ----------------------------------
+
+.intro {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.intro-portrait img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  margin: 0;
+}
+
+.intro-body > p:first-child { margin-top: 0; }
+
+@media (max-width: 700px) {
+  .intro { flex-direction: column; align-items: center; text-align: left; }
+  .intro-portrait img { width: 150px; height: 150px; }
+}
+
+// --- Project cards ---------------------------------------------------------
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba($watrs-slate, 0.14);
+  border-radius: $border-radius;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba($watrs-dark, 0.13);
+    transform: translateY(-2px);
+  }
+
+  // Each thumb points at an optional file in images/projects/. Missing files
+  // fall back to the gradient, so the grid never shows a broken image.
+  .project-thumb {
+    height: 130px;
+    background-color: $watrs-mid;
+    background-image: linear-gradient(135deg, $watrs-dark, $watrs-mid);
+    background-size: cover;
+    background-position: center;
+  }
+
+  h3 {
+    margin: 0.9rem 1rem 0.2rem;
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+
+  .project-tag {
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $watrs-mute;
+  }
+
+  p { margin: 0.6rem 1rem 1rem; font-size: 0.92rem; }
+  p:last-child { margin-top: auto; }
+}
+
+// Each project gets its own hue so the grid reads as six distinct projects.
+// To use a photo, add it and set the background inline on the thumb div in
+// index.qmd (see the note on .hero above for the syntax):
+//   ::: {.project-thumb style="background-image: url('images/projects/insar.jpg');"}
+.project-thumb-logger    { background-image: linear-gradient(135deg, #0b4f66, #2f8fa8); }
+.project-thumb-watershed { background-image: linear-gradient(135deg, #10606b, #3fa79b); }
+.project-thumb-cryo      { background-image: linear-gradient(135deg, #33607f, #8fb9d4); }
+.project-thumb-slope     { background-image: linear-gradient(135deg, #5a4a63, #a1789a); }
+.project-thumb-temp      { background-image: linear-gradient(135deg, #1f6f78, #6fb7a6); }
+.project-thumb-rs        { background-image: linear-gradient(135deg, #26506b, #5b8fae); }
+
+// --- Partner columns and logo strip ----------------------------------------
+
+.partners h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $watrs-mute;
+  border-bottom: 1px solid rgba($watrs-slate, 0.15);
+  padding-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+.partners ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.92rem;
+}
+.partners li { margin-bottom: 0.45rem; }
+
+.person {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+.person img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+@media (max-width: 600px) {
+  .person { grid-template-columns: 1fr; }
+  .person img { max-width: 160px; }
+}
+
+// Ready for logo files: put <img> tags inside a .logo-strip div.
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 1.5rem 0 0.5rem;
+
+  img {
+    height: 46px;
+    width: auto;
+    margin: 0;
+    filter: grayscale(100%);
+    opacity: 0.65;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+  img:hover { filter: grayscale(0%); opacity: 1; }
+}
+
+
+// --- News feed in the margin column ----------------------------------------
+// The scroll box must be a plain div nested INSIDE the .column-margin div, and
+// the panel must contain no markdown heading. Quarto rewrites the margin div
+// itself (moving extra classes to an inner div, or to a generated <section> if
+// a heading is present), so any selector hung on .column-margin stops matching.
+// Hence the .news-head div instead of "### News".
+
+.news-scroll {
+  max-height: 72vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 0.6rem 0 0.7rem;
+  border-left: 2px solid rgba($watrs-deep, 0.25);
+  font-size: 0.78rem;
+  line-height: 1.4;
+
+  scrollbar-width: thin;
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-thumb {
+    background: rgba($watrs-slate, 0.25);
+    border-radius: 3px;
+  }
+}
+
+.news-head {
+  font-family: $headings-font-family;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: $watrs-dark;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid rgba($watrs-deep, 0.25);
+
+  // stays put while the items below scroll under it
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.news-item {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba($watrs-slate, 0.1);
+
+  &:last-of-type { border-bottom: none; }
+  p { margin: 0; }
+}
+
+.news-date {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $watrs-mute;
+  margin-bottom: 0.1rem;
+}
+
+.news-text { min-width: 0; }
+
+// Thumbnails. Each category gets its own hue and Bootstrap icon so the feed
+// reads at a glance without needing a photo for every item. To use a real
+// photo instead, swap the span for the .news-thumb-photo pattern:
+//   <a class="news-thumb news-thumb-photo" href="..."><img src="images/news/x.jpg" alt=""></a>
+.news-thumb {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  background-image: linear-gradient(135deg, $watrs-dark, $watrs-mid);
+
+  i { font-size: 0.95rem; line-height: 1; }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    display: block;
+  }
+}
+
+.news-thumb-paper    { background-image: linear-gradient(135deg, #0b4f66, #2f8fa8); }
+.news-thumb-data     { background-image: linear-gradient(135deg, #10606b, #3fa79b); }
+.news-thumb-media    { background-image: linear-gradient(135deg, #5a4a63, #a1789a); }
+.news-thumb-talk     { background-image: linear-gradient(135deg, #26506b, #5b8fae); }
+.news-thumb-event    { background-image: linear-gradient(135deg, #1f6f78, #6fb7a6); }
+.news-thumb-outreach { background-image: linear-gradient(135deg, #33607f, #8fb9d4); }
+.news-thumb-lab      { background-image: linear-gradient(135deg, #3d5a80, #7f9dc0); }
+.news-thumb-photo    { background-image: none; }
+
+.news-more {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgba($watrs-slate, 0.15);
+  font-size: 0.72rem;
+  color: $watrs-mute;
+}
+
+// On narrow screens Quarto drops the margin column into the flow; the panel
+// should then be a normal block, not a short sticky box.
+@media (max-width: 991px) {
+  .news-scroll {
+    max-height: none;
+    overflow-y: visible;
+    font-size: 0.85rem;
+  }
+}
+
+// --- Tables (carried over from the old styles.css) -------------------------
+
+table {
+  width: 100%;
+  font-size: 0.93rem;
+}
+table th {
+  border-bottom: 2px solid rgba($watrs-slate, 0.3);
+  text-align: left;
+}
+table td, table th {
+  padding: 0.35rem 0.5rem;
+  vertical-align: top;
+}
+
+// Publication and presentation lists read better with room to breathe.
+ol > li, ul > li { margin-bottom: 0.4rem; }
+
+// Academicons in the navbar sit slightly high next to Bootstrap icons.
+.navbar .ai {
+  font-size: 1.1rem;
+  vertical-align: -0.05em;
+}
+
+// Body images are centred and never overflow their column.
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}

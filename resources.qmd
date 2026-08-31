@@ -1,0 +1,280 @@
+---
+title: "Data and Tools"
+pagetitle: "WatRS - Data and Tools"
+toc: true
+toc-location: left
+number-sections: false
+---
+
+A working list of the data sources and tools we use in the lab. It leans toward British Columbia and western Canada, but the global sections apply anywhere. Everything here is free to access, though some sources require registration.
+
+If you are new to this, start with the [BC Data Catalogue](#british-columbia), [Copernicus Data Space](#optical-satellite-imagery) and [Google Earth Engine](#cloud-platforms) — between them they cover most of what a watershed project needs.
+
+::: callout-tip
+## Suggest an addition
+
+Found something missing or a dead link? Send it along by [email](mailto:alex.bevington@unbc.ca) and I will add it.
+:::
+
+# British Columbia {#british-columbia}
+
+[**BC Data Catalogue**](https://catalogue.data.gov.bc.ca/)\
+The provincial starting point. Thousands of datasets covering hydrology, forestry, land use, cadastre and administrative boundaries. Most are available through WMS and WFS endpoints as well as direct download.
+
+[**iMapBC**](https://maps.gov.bc.ca/ess/hm/imap4m/)\
+Browser-based viewer over the provincial data holdings. Useful for quick reconnaissance before committing to a download.
+
+[**LidarBC Open LiDAR Data Portal**](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/lidarbc)\
+Provincial LiDAR acquisitions with point clouds, bare-earth DEMs and derived products. Coverage is patchy and concentrated around populated areas, transport corridors and areas of hazard concern.
+
+[**BC Freshwater Atlas**](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-stream-network)\
+The provincial hydrographic framework — stream network, watershed polygons, lakes, wetlands and linear boundaries. The watershed groups and assessment watersheds are the standard units for most BC work.
+
+[**Vegetation Resources Inventory (VRI)**](https://catalogue.data.gov.bc.ca/dataset/vri-forest-vegetation-composition-polygons-rank-1)\
+Forest stand attributes: species composition, age, height, crown closure. The backbone of most forest hydrology work in the province.
+
+[**BC Wildfire Perimeters**](https://catalogue.data.gov.bc.ca/dataset/fire-perimeters-historical)\
+Historical and current-year fire perimeters. Pair with VRI and the consolidated cutblocks layer for a full disturbance history.
+
+[**Consolidated Cutblocks**](https://catalogue.data.gov.bc.ca/dataset/harvested-areas-of-bc-consolidated-cutblocks-)\
+Harvest polygons compiled from multiple reporting streams, with harvest year.
+
+[**BC Water Resources Atlas**](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-data-tools)\
+Water licences, wells, aquifers and observation networks.
+
+[**Groundwater Wells and Aquifers (GWELLS)**](https://apps.nrs.gov.bc.ca/gwells/)\
+Well records, lithology logs and aquifer mapping. Relevant to surface water–groundwater work.
+
+[**Habitat Wizard / Fisheries Inventory**](https://catalogue.data.gov.bc.ca/dataset/known-bc-fish-observations-and-bc-fish-distributions)\
+Fish observations and distribution by stream reach.
+
+# Canada
+
+[**Open Government Portal**](https://open.canada.ca/en/open-data)\
+Federal catalogue spanning all departments.
+
+[**Canadian Digital Elevation Model / HRDEM**](https://open.canada.ca/data/en/dataset/957782bf-847c-4644-a757-e383c0057995)\
+The High Resolution Digital Elevation Model is the federal LiDAR-derived product, delivered at 1 m and 2 m where coverage exists. Falls back to the older CDEM elsewhere.
+
+[**National Hydro Network (NHN)**](https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977)\
+National-scale hydrography. Coarser than the Freshwater Atlas within BC, but consistent across provincial boundaries.
+
+[**HYDAT / Water Survey of Canada**](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/data-products-services/national-archive-hydat.html)\
+The national streamflow and water level archive. Access from R with `tidyhydat`.
+
+[**Canadian Centre for Climate Services**](https://climate-change.canada.ca/climate-data)\
+Downscaled climate projections, gridded historical data and station records.
+
+[**Annual Crop Inventory**](https://open.canada.ca/data/en/dataset/ba2645d5-4458-414d-b196-6303ac06c1c9)\
+Annual 30 m land cover for agricultural regions of Canada, 2009 onward.
+
+[**National Forest Information System**](https://nfis.org/)\
+Forest inventory, disturbance and carbon products.
+
+[**Canadian Permafrost Datasets**](https://www.permafrost.org/) and the [**Permafrost Information Network**](https://canadianpermafrostassociation.ca/)\
+Ground temperature records, active layer measurements and permafrost extent mapping.
+
+# LiDAR and elevation
+
+[**OpenTopography**](https://opentopography.org/)\
+Point clouds and derived rasters from academic and agency campaigns worldwide, plus on-demand processing of global DEMs. The best single entry point for LiDAR.
+
+[**Copernicus DEM (GLO-30)**](https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model)\
+30 m global DEM derived from TanDEM-X. Generally the best free global elevation product available — noticeably cleaner than SRTM in mountainous terrain.
+
+[**NASADEM**](https://lpdaac.usgs.gov/products/nasadem_hgtv001/)\
+Reprocessed SRTM with improved void filling. 30 m, near-global.
+
+[**ArcticDEM**](https://www.pgc.umn.edu/data/arcticdem/)\
+2 m strip and mosaic DEMs from stereo WorldView imagery, covering everything above roughly 60°N plus all of Alaska. Time-stamped strips make it viable for change detection.
+
+[**ICESat-2**](https://nsidc.org/data/icesat-2)\
+Spaceborne laser altimetry. Sparse in space but precise in elevation, and widely used for glacier and snow surface change, canopy height and lake level.
+
+[**GEDI**](https://gedi.umd.edu/)\
+Waveform LiDAR from the ISS, optimized for canopy structure and biomass. Limited to roughly 52°N and south, so it misses northern BC.
+
+# Optical satellite imagery {#optical-satellite-imagery}
+
+[**USGS EarthExplorer**](https://earthexplorer.usgs.gov/)\
+Landsat archive back to 1972, plus declassified Corona imagery, aerial photo scans, ASTER and much else. Registration required.
+
+[**Copernicus Data Space Ecosystem**](https://dataspace.copernicus.eu/)\
+The current access point for Sentinel data, replacing the retired Open Access Hub. Sentinel-2 optical, Sentinel-1 SAR, Sentinel-3 and Sentinel-5P all live here.
+
+[**NASA Earthdata Search**](https://search.earthdata.nasa.gov/)\
+Broad NASA holdings — MODIS, VIIRS, ASTER, ECOSTRESS, atmospheric and cryospheric products.
+
+[**Planet Education and Research Program**](https://www.planet.com/industries/education-and-research/)\
+PlanetScope daily imagery at roughly 3 m, free for qualifying academic use under an application process. Also see the [**Norway International Climate and Forest Initiative**](https://www.planet.com/nicfi/) basemaps, which cover the tropics only.
+
+[**Sentinel Hub EO Browser**](https://apps.sentinel-hub.com/eo-browser/)\
+Fast visual browsing and comparison of Sentinel, Landsat and MODIS. Good for scoping dates before writing any code.
+
+[**Maxar Open Data Program**](https://www.maxar.com/open-data)\
+Very high resolution imagery released for major disaster events. Occasionally relevant for landslide and flood response.
+
+# SAR and InSAR
+
+[**Alaska Satellite Facility (ASF) Vertex**](https://search.asf.alaska.edu/)\
+The main SAR archive: Sentinel-1, ALOS PALSAR, ERS, RADARSAT-1 and more. ASF also runs [**HyP3**](https://hyp3-docs.asf.alaska.edu/), which processes interferograms and RTC products on demand — a considerable shortcut if you would rather not run a full processing chain yourself.
+
+[**RADARSAT Constellation Mission (RCM)**](https://www.asc-csa.gc.ca/eng/satellites/radarsat/)\
+Canadian government users and approved researchers can request RCM data through the Earth Observation Data Management System. Access is not fully open.
+
+[**COMET LiCSAR Portal**](https://comet.nerc.ac.uk/comet-lics-portal/)\
+Pre-processed Sentinel-1 interferograms and velocity fields over tectonically active regions. Coverage is selective.
+
+[**NISAR**](https://nisar.jpl.nasa.gov/)\
+The NASA–ISRO L-band mission. Worth tracking for slope stability work given the improved coherence over vegetated terrain compared with C-band.
+
+# Snow, ice and permafrost
+
+[**National Snow and Ice Data Center**](https://nsidc.org/)\
+The central archive for cryospheric data — snow cover, sea ice, glaciers, frozen ground.
+
+[**Randolph Glacier Inventory**](https://www.glims.org/RGI/)\
+Global glacier outlines. The standard reference dataset for glacier extent.
+
+[**GLIMS**](https://www.glims.org/)\
+Multi-temporal glacier outlines and change records.
+
+[**World Glacier Monitoring Service**](https://wgms.ch/)\
+Mass balance and front variation records from long-term monitoring programs.
+
+[**SNODAS**](https://nsidc.org/data/g02158)\
+Daily modelled snow water equivalent and depth. US-focused but the model domain extends into southern Canada.
+
+[**BC Automated Snow Weather Stations**](https://catalogue.data.gov.bc.ca/dataset/automated-snow-weather-station-locations)\
+Provincial snow pillow and snow course network.
+
+# Climate and weather
+
+[**ERA5 via Copernicus Climate Data Store**](https://cds.climate.copernicus.eu/)\
+Global reanalysis at hourly resolution from 1940. The default choice when you need consistent meteorological forcing anywhere.
+
+[**Daymet**](https://daymet.ornl.gov/)\
+1 km gridded daily surface weather for North America.
+
+[**PRISM**](https://prism.oregonstate.edu/)\
+Climate normals and time series, strong in complex terrain. Free for the US; Canadian coverage is limited.
+
+[**ClimateNA**](https://climatena.ca/)\
+Downscaled climate data for North America, widely used in BC forestry and ecology.
+
+[**WorldClim**](https://www.worldclim.org/)\
+Global climate surfaces and bioclimatic variables.
+
+# Land cover and disturbance
+
+[**Global Forest Change (Hansen)**](https://glad.earthengine.app/view/global-forest-change)\
+Annual global forest loss at 30 m, 2000 onward.
+
+[**Dynamic World**](https://dynamicworld.app/)\
+Near-real-time 10 m land cover from Sentinel-2, updated continuously.
+
+[**ESA WorldCover**](https://esa-worldcover.org/)\
+Global 10 m land cover.
+
+[**LandTrendr and CCDC**](https://emapr.ceoas.oregonstate.edu/landtrendr/)\
+Time-series disturbance detection algorithms, both implemented in Earth Engine.
+
+[**Global Surface Water Explorer**](https://global-surface-water.appspot.com/)\
+Pekel et al. surface water occurrence and change, 1984 onward at 30 m.
+
+[**HydroSHEDS**](https://www.hydrosheds.org/)\
+Global hydrographic derivatives from elevation data — flow direction, accumulation, basin delineation.
+
+# Cloud platforms {#cloud-platforms}
+
+[**Google Earth Engine**](https://earthengine.google.com/)\
+Petabyte-scale archive with server-side processing. Free for academic and research use. The fastest route from question to continental-scale answer, at the cost of working inside someone else's environment. Interfaces exist for [JavaScript](https://code.earthengine.google.com/), [Python](https://developers.google.com/earth-engine/guides/python_install) and [R via `rgee`](https://r-spatial.github.io/rgee/).
+
+[**Microsoft Planetary Computer**](https://planetarycomputer.microsoft.com/)\
+STAC-indexed open archive with a hosted JupyterHub. Strong catalogue, fully open data access.
+
+[**AWS Open Data Registry**](https://registry.opendata.aws/)\
+Landsat, Sentinel, NAIP and many others staged in S3 as cloud-optimized GeoTIFFs. Requester-pays in some cases.
+
+[**Radiant Earth MLHub**](https://mlhub.earth/)\
+Training datasets for machine learning on Earth observation data.
+
+[**STAC Index**](https://stacindex.org/)\
+Directory of public SpatioTemporal Asset Catalogs. Increasingly the way to find and query cloud-hosted imagery without downloading anything.
+
+# Software
+
+[**QGIS**](https://qgis.org/)\
+The desktop GIS. Free, open source, and now genuinely comparable to commercial alternatives for most tasks.
+
+[**GDAL/OGR**](https://gdal.org/)\
+The library underneath nearly everything else. Learning the command line tools (`gdalwarp`, `gdal_translate`, `ogr2ogr`) pays for itself quickly.
+
+[**SNAP**](https://step.esa.int/main/toolboxes/snap/)\
+ESA's toolbox for Sentinel data, including the SAR processing chain.
+
+[**ISCE2**](https://github.com/isce-framework/isce2) and [**MintPy**](https://github.com/insarlab/MintPy)\
+InSAR processing and time-series analysis.
+
+[**PDAL**](https://pdal.io/) and [**lidR**](https://r-lidar.github.io/lidRbook/)\
+Point cloud processing, in C++ and R respectively.
+
+[**Whitebox Tools**](https://www.whiteboxgeo.com/)\
+Extensive geomorphometry and hydrological terrain analysis, with R and Python bindings.
+
+[**SAGA GIS**](https://saga-gis.sourceforge.io/)\
+Terrain analysis, particularly strong on hydrological indices.
+
+# R packages
+
+| Package | Purpose |
+|------------------------------------|------------------------------------|
+| [`sf`](https://r-spatial.github.io/sf/) | Vector data |
+| [`terra`](https://rspatial.github.io/terra/) | Raster data (successor to `raster`) |
+| [`stars`](https://r-spatial.github.io/stars/) | Data cubes and spatiotemporal arrays |
+| [`rgee`](https://r-spatial.github.io/rgee/) | Earth Engine from R |
+| [`rstac`](https://brazil-data-cube.github.io/rstac/) | Querying STAC catalogues |
+| [`lidR`](https://r-lidar.github.io/lidRbook/) | LiDAR point clouds |
+| [`whitebox`](https://whiteboxr.gishub.org/) | Whitebox Tools bindings |
+| [`tidyhydat`](https://docs.ropensci.org/tidyhydat/) | Water Survey of Canada data |
+| [`weathercan`](https://docs.ropensci.org/weathercan/) | ECCC climate station data |
+| [`bcdata`](https://bcgov.github.io/bcdata/) | BC Data Catalogue access |
+| [`bcmaps`](https://bcgov.github.io/bcmaps/) | BC administrative and physical boundaries |
+| [`fasstr`](https://bcgov.github.io/fasstr/) | Streamflow analysis |
+| [`tmap`](https://r-tmap.github.io/tmap/) | Thematic mapping |
+
+# Python packages
+
+| Package | Purpose |
+|------------------------------------|------------------------------------|
+| [`geopandas`](https://geopandas.org/) | Vector data |
+| [`rasterio`](https://rasterio.readthedocs.io/) | Raster I/O |
+| [`xarray`](https://docs.xarray.dev/) | Labelled multidimensional arrays |
+| [`rioxarray`](https://corteva.github.io/rioxarray/) | Geospatial extension to xarray |
+| [`pystac-client`](https://pystac-client.readthedocs.io/) | STAC queries |
+| [`stackstac`](https://stackstac.readthedocs.io/) | STAC items to xarray |
+| [`odc-stac`](https://odc-stac.readthedocs.io/) | Open Data Cube STAC loading |
+| [`geemap`](https://geemap.org/) | Earth Engine with interactive maps |
+| [`dask`](https://www.dask.org/) | Parallel and out-of-core computation |
+| [`pdal`](https://pdal.io/en/latest/python.html) | Point cloud pipelines |
+| [`snowexsql`](https://snowexsql.readthedocs.io/) | SnowEx field data |
+
+# Learning
+
+[**Geocomputation with R**](https://r.geocompx.org/)\
+Free online book, and the best single introduction to spatial analysis in R.
+
+[**Spatial Data Science with R**](https://rspatial.org/)\
+Robert Hijmans' course material, closely tied to `terra`.
+
+[**Google Earth Engine Developers Guide**](https://developers.google.com/earth-engine/guides)\
+Official documentation, worth reading properly rather than copying snippets.
+
+[**Spatial Thoughts**](https://spatialthoughts.com/courses/)\
+Well-constructed free courses on QGIS, Earth Engine and Python.
+
+[**Awesome Earth Observation Code**](https://github.com/acgeospatial/awesome-earthobservation-code)\
+Community-maintained list of tools and notebooks.
+
+[**SAR Handbook (SERVIR)**](https://servirglobal.net/resources/sar-handbook)\
+Practical introduction to SAR, aimed at people who are not radar specialists.

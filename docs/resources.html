@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>WatRS - Data and Tools – Watershed Remote Sensing Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/logo/watrs-favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6e665b6356bcbd38c99ae6e6bcc59389.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="academicicons/css/academicons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap">
+<meta name="theme-color" content="#0b6a88">
+
+
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo/watrs-horizontal.png" alt="Wat-RS — Watershed Remote Sensing Lab" class="navbar-logo light-content">
+    <img src="./images/logo/watrs-horizontal.png" alt="Wat-RS — Watershed Remote Sensing Lab" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Watershed Remote Sensing Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./index.html">
+ <span class="dropdown-text">Lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people.html">
+ <span class="dropdown-text">People</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./opportunities.html">
+ <span class="dropdown-text">Opportunities</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pubs.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./outreach.html">
+ <span class="dropdown-text">Outreach</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cv.html">
+ <span class="dropdown-text">CV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./courses.html">
+ <span class="dropdown-text">Teaching and workshops</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./resources.html">
+ <span class="dropdown-text">Data and Tools</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-apps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Apps</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-apps">    
+        <li>
+    <a class="dropdown-item" href="https://watershed-rs.shinyapps.io/watershedBC/">
+ <span class="dropdown-text">watershedBC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://watershed-rs.shinyapps.io/remotelogger/">
+ <span class="dropdown-text">RemoteLogger</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bcgov-env.shinyapps.io/bc_gw_tools/">
+ <span class="dropdown-text">Groundwater Wells</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://ee-bevingtona.projects.earthengine.app/view/everyimage">
+ <span class="dropdown-text">EveryImage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://ee-bevingtona.projects.earthengine.app/view/mosaic">
+ <span class="dropdown-text">MosaicMaker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bevingtona.users.earthengine.app/view/bc-water-surface-temperature-explorer">
+ <span class="dropdown-text">Water Temperature Explorer</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:alex.bevington@unbc.ca"> <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-9249-4444"> 
+<span class="menu-text"><i class="ai ai-orcid" role="img" aria-label="ORCID"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=5SVDaREAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="ai ai-google-scholar" role="img" aria-label="Google Scholar"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Alexandre-Bevington"> 
+<span class="menu-text"><i class="ai ai-researchgate" role="img" aria-label="ResearchGate"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bevingtona"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/abevingtona"> <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/bevingtona/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#british-columbia" id="toc-british-columbia" class="nav-link active" data-scroll-target="#british-columbia">British Columbia</a></li>
+  <li><a href="#canada" id="toc-canada" class="nav-link" data-scroll-target="#canada">Canada</a></li>
+  <li><a href="#lidar-and-elevation" id="toc-lidar-and-elevation" class="nav-link" data-scroll-target="#lidar-and-elevation">LiDAR and elevation</a></li>
+  <li><a href="#optical-satellite-imagery" id="toc-optical-satellite-imagery" class="nav-link" data-scroll-target="#optical-satellite-imagery">Optical satellite imagery</a></li>
+  <li><a href="#sar-and-insar" id="toc-sar-and-insar" class="nav-link" data-scroll-target="#sar-and-insar">SAR and InSAR</a></li>
+  <li><a href="#snow-ice-and-permafrost" id="toc-snow-ice-and-permafrost" class="nav-link" data-scroll-target="#snow-ice-and-permafrost">Snow, ice and permafrost</a></li>
+  <li><a href="#climate-and-weather" id="toc-climate-and-weather" class="nav-link" data-scroll-target="#climate-and-weather">Climate and weather</a></li>
+  <li><a href="#land-cover-and-disturbance" id="toc-land-cover-and-disturbance" class="nav-link" data-scroll-target="#land-cover-and-disturbance">Land cover and disturbance</a></li>
+  <li><a href="#cloud-platforms" id="toc-cloud-platforms" class="nav-link" data-scroll-target="#cloud-platforms">Cloud platforms</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
+  <li><a href="#python-packages" id="toc-python-packages" class="nav-link" data-scroll-target="#python-packages">Python packages</a></li>
+  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning">Learning</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data and Tools</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A working list of the data sources and tools we use in the lab. It leans toward British Columbia and western Canada, but the global sections apply anywhere. Everything here is free to access, though some sources require registration.</p>
+<p>If you are new to this, start with the <a href="#british-columbia">BC Data Catalogue</a>, <a href="#optical-satellite-imagery">Copernicus Data Space</a> and <a href="#cloud-platforms">Google Earth Engine</a> — between them they cover most of what a watershed project needs.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Suggest an addition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Found something missing or a dead link? Send it along by <a href="mailto:alex.bevington@unbc.ca">email</a> and I will add it.</p>
+</div>
+</div>
+<section id="british-columbia" class="level1">
+<h1>British Columbia</h1>
+<p><a href="https://catalogue.data.gov.bc.ca/"><strong>BC Data Catalogue</strong></a><br>
+The provincial starting point. Thousands of datasets covering hydrology, forestry, land use, cadastre and administrative boundaries. Most are available through WMS and WFS endpoints as well as direct download.</p>
+<p><a href="https://maps.gov.bc.ca/ess/hm/imap4m/"><strong>iMapBC</strong></a><br>
+Browser-based viewer over the provincial data holdings. Useful for quick reconnaissance before committing to a download.</p>
+<p><a href="https://www2.gov.bc.ca/gov/content/data/geographic-data-services/lidarbc"><strong>LidarBC Open LiDAR Data Portal</strong></a><br>
+Provincial LiDAR acquisitions with point clouds, bare-earth DEMs and derived products. Coverage is patchy and concentrated around populated areas, transport corridors and areas of hazard concern.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-stream-network"><strong>BC Freshwater Atlas</strong></a><br>
+The provincial hydrographic framework — stream network, watershed polygons, lakes, wetlands and linear boundaries. The watershed groups and assessment watersheds are the standard units for most BC work.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/vri-forest-vegetation-composition-polygons-rank-1"><strong>Vegetation Resources Inventory (VRI)</strong></a><br>
+Forest stand attributes: species composition, age, height, crown closure. The backbone of most forest hydrology work in the province.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/fire-perimeters-historical"><strong>BC Wildfire Perimeters</strong></a><br>
+Historical and current-year fire perimeters. Pair with VRI and the consolidated cutblocks layer for a full disturbance history.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/harvested-areas-of-bc-consolidated-cutblocks-"><strong>Consolidated Cutblocks</strong></a><br>
+Harvest polygons compiled from multiple reporting streams, with harvest year.</p>
+<p><a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/water-data-tools"><strong>BC Water Resources Atlas</strong></a><br>
+Water licences, wells, aquifers and observation networks.</p>
+<p><a href="https://apps.nrs.gov.bc.ca/gwells/"><strong>Groundwater Wells and Aquifers (GWELLS)</strong></a><br>
+Well records, lithology logs and aquifer mapping. Relevant to surface water–groundwater work.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/known-bc-fish-observations-and-bc-fish-distributions"><strong>Habitat Wizard / Fisheries Inventory</strong></a><br>
+Fish observations and distribution by stream reach.</p>
+</section>
+<section id="canada" class="level1">
+<h1>Canada</h1>
+<p><a href="https://open.canada.ca/en/open-data"><strong>Open Government Portal</strong></a><br>
+Federal catalogue spanning all departments.</p>
+<p><a href="https://open.canada.ca/data/en/dataset/957782bf-847c-4644-a757-e383c0057995"><strong>Canadian Digital Elevation Model / HRDEM</strong></a><br>
+The High Resolution Digital Elevation Model is the federal LiDAR-derived product, delivered at 1 m and 2 m where coverage exists. Falls back to the older CDEM elsewhere.</p>
+<p><a href="https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977"><strong>National Hydro Network (NHN)</strong></a><br>
+National-scale hydrography. Coarser than the Freshwater Atlas within BC, but consistent across provincial boundaries.</p>
+<p><a href="https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey/data-products-services/national-archive-hydat.html"><strong>HYDAT / Water Survey of Canada</strong></a><br>
+The national streamflow and water level archive. Access from R with <code>tidyhydat</code>.</p>
+<p><a href="https://climate-change.canada.ca/climate-data"><strong>Canadian Centre for Climate Services</strong></a><br>
+Downscaled climate projections, gridded historical data and station records.</p>
+<p><a href="https://open.canada.ca/data/en/dataset/ba2645d5-4458-414d-b196-6303ac06c1c9"><strong>Annual Crop Inventory</strong></a><br>
+Annual 30 m land cover for agricultural regions of Canada, 2009 onward.</p>
+<p><a href="https://nfis.org/"><strong>National Forest Information System</strong></a><br>
+Forest inventory, disturbance and carbon products.</p>
+<p><a href="https://www.permafrost.org/"><strong>Canadian Permafrost Datasets</strong></a> and the <a href="https://canadianpermafrostassociation.ca/"><strong>Permafrost Information Network</strong></a><br>
+Ground temperature records, active layer measurements and permafrost extent mapping.</p>
+</section>
+<section id="lidar-and-elevation" class="level1">
+<h1>LiDAR and elevation</h1>
+<p><a href="https://opentopography.org/"><strong>OpenTopography</strong></a><br>
+Point clouds and derived rasters from academic and agency campaigns worldwide, plus on-demand processing of global DEMs. The best single entry point for LiDAR.</p>
+<p><a href="https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model"><strong>Copernicus DEM (GLO-30)</strong></a><br>
+30 m global DEM derived from TanDEM-X. Generally the best free global elevation product available — noticeably cleaner than SRTM in mountainous terrain.</p>
+<p><a href="https://lpdaac.usgs.gov/products/nasadem_hgtv001/"><strong>NASADEM</strong></a><br>
+Reprocessed SRTM with improved void filling. 30 m, near-global.</p>
+<p><a href="https://www.pgc.umn.edu/data/arcticdem/"><strong>ArcticDEM</strong></a><br>
+2 m strip and mosaic DEMs from stereo WorldView imagery, covering everything above roughly 60°N plus all of Alaska. Time-stamped strips make it viable for change detection.</p>
+<p><a href="https://nsidc.org/data/icesat-2"><strong>ICESat-2</strong></a><br>
+Spaceborne laser altimetry. Sparse in space but precise in elevation, and widely used for glacier and snow surface change, canopy height and lake level.</p>
+<p><a href="https://gedi.umd.edu/"><strong>GEDI</strong></a><br>
+Waveform LiDAR from the ISS, optimized for canopy structure and biomass. Limited to roughly 52°N and south, so it misses northern BC.</p>
+</section>
+<section id="optical-satellite-imagery" class="level1">
+<h1>Optical satellite imagery</h1>
+<p><a href="https://earthexplorer.usgs.gov/"><strong>USGS EarthExplorer</strong></a><br>
+Landsat archive back to 1972, plus declassified Corona imagery, aerial photo scans, ASTER and much else. Registration required.</p>
+<p><a href="https://dataspace.copernicus.eu/"><strong>Copernicus Data Space Ecosystem</strong></a><br>
+The current access point for Sentinel data, replacing the retired Open Access Hub. Sentinel-2 optical, Sentinel-1 SAR, Sentinel-3 and Sentinel-5P all live here.</p>
+<p><a href="https://search.earthdata.nasa.gov/"><strong>NASA Earthdata Search</strong></a><br>
+Broad NASA holdings — MODIS, VIIRS, ASTER, ECOSTRESS, atmospheric and cryospheric products.</p>
+<p><a href="https://www.planet.com/industries/education-and-research/"><strong>Planet Education and Research Program</strong></a><br>
+PlanetScope daily imagery at roughly 3 m, free for qualifying academic use under an application process. Also see the <a href="https://www.planet.com/nicfi/"><strong>Norway International Climate and Forest Initiative</strong></a> basemaps, which cover the tropics only.</p>
+<p><a href="https://apps.sentinel-hub.com/eo-browser/"><strong>Sentinel Hub EO Browser</strong></a><br>
+Fast visual browsing and comparison of Sentinel, Landsat and MODIS. Good for scoping dates before writing any code.</p>
+<p><a href="https://www.maxar.com/open-data"><strong>Maxar Open Data Program</strong></a><br>
+Very high resolution imagery released for major disaster events. Occasionally relevant for landslide and flood response.</p>
+</section>
+<section id="sar-and-insar" class="level1">
+<h1>SAR and InSAR</h1>
+<p><a href="https://search.asf.alaska.edu/"><strong>Alaska Satellite Facility (ASF) Vertex</strong></a><br>
+The main SAR archive: Sentinel-1, ALOS PALSAR, ERS, RADARSAT-1 and more. ASF also runs <a href="https://hyp3-docs.asf.alaska.edu/"><strong>HyP3</strong></a>, which processes interferograms and RTC products on demand — a considerable shortcut if you would rather not run a full processing chain yourself.</p>
+<p><a href="https://www.asc-csa.gc.ca/eng/satellites/radarsat/"><strong>RADARSAT Constellation Mission (RCM)</strong></a><br>
+Canadian government users and approved researchers can request RCM data through the Earth Observation Data Management System. Access is not fully open.</p>
+<p><a href="https://comet.nerc.ac.uk/comet-lics-portal/"><strong>COMET LiCSAR Portal</strong></a><br>
+Pre-processed Sentinel-1 interferograms and velocity fields over tectonically active regions. Coverage is selective.</p>
+<p><a href="https://nisar.jpl.nasa.gov/"><strong>NISAR</strong></a><br>
+The NASA–ISRO L-band mission. Worth tracking for slope stability work given the improved coherence over vegetated terrain compared with C-band.</p>
+</section>
+<section id="snow-ice-and-permafrost" class="level1">
+<h1>Snow, ice and permafrost</h1>
+<p><a href="https://nsidc.org/"><strong>National Snow and Ice Data Center</strong></a><br>
+The central archive for cryospheric data — snow cover, sea ice, glaciers, frozen ground.</p>
+<p><a href="https://www.glims.org/RGI/"><strong>Randolph Glacier Inventory</strong></a><br>
+Global glacier outlines. The standard reference dataset for glacier extent.</p>
+<p><a href="https://www.glims.org/"><strong>GLIMS</strong></a><br>
+Multi-temporal glacier outlines and change records.</p>
+<p><a href="https://wgms.ch/"><strong>World Glacier Monitoring Service</strong></a><br>
+Mass balance and front variation records from long-term monitoring programs.</p>
+<p><a href="https://nsidc.org/data/g02158"><strong>SNODAS</strong></a><br>
+Daily modelled snow water equivalent and depth. US-focused but the model domain extends into southern Canada.</p>
+<p><a href="https://catalogue.data.gov.bc.ca/dataset/automated-snow-weather-station-locations"><strong>BC Automated Snow Weather Stations</strong></a><br>
+Provincial snow pillow and snow course network.</p>
+</section>
+<section id="climate-and-weather" class="level1">
+<h1>Climate and weather</h1>
+<p><a href="https://cds.climate.copernicus.eu/"><strong>ERA5 via Copernicus Climate Data Store</strong></a><br>
+Global reanalysis at hourly resolution from 1940. The default choice when you need consistent meteorological forcing anywhere.</p>
+<p><a href="https://daymet.ornl.gov/"><strong>Daymet</strong></a><br>
+1 km gridded daily surface weather for North America.</p>
+<p><a href="https://prism.oregonstate.edu/"><strong>PRISM</strong></a><br>
+Climate normals and time series, strong in complex terrain. Free for the US; Canadian coverage is limited.</p>
+<p><a href="https://climatena.ca/"><strong>ClimateNA</strong></a><br>
+Downscaled climate data for North America, widely used in BC forestry and ecology.</p>
+<p><a href="https://www.worldclim.org/"><strong>WorldClim</strong></a><br>
+Global climate surfaces and bioclimatic variables.</p>
+</section>
+<section id="land-cover-and-disturbance" class="level1">
+<h1>Land cover and disturbance</h1>
+<p><a href="https://glad.earthengine.app/view/global-forest-change"><strong>Global Forest Change (Hansen)</strong></a><br>
+Annual global forest loss at 30 m, 2000 onward.</p>
+<p><a href="https://dynamicworld.app/"><strong>Dynamic World</strong></a><br>
+Near-real-time 10 m land cover from Sentinel-2, updated continuously.</p>
+<p><a href="https://esa-worldcover.org/"><strong>ESA WorldCover</strong></a><br>
+Global 10 m land cover.</p>
+<p><a href="https://emapr.ceoas.oregonstate.edu/landtrendr/"><strong>LandTrendr and CCDC</strong></a><br>
+Time-series disturbance detection algorithms, both implemented in Earth Engine.</p>
+<p><a href="https://global-surface-water.appspot.com/"><strong>Global Surface Water Explorer</strong></a><br>
+Pekel et al.&nbsp;surface water occurrence and change, 1984 onward at 30 m.</p>
+<p><a href="https://www.hydrosheds.org/"><strong>HydroSHEDS</strong></a><br>
+Global hydrographic derivatives from elevation data — flow direction, accumulation, basin delineation.</p>
+</section>
+<section id="cloud-platforms" class="level1">
+<h1>Cloud platforms</h1>
+<p><a href="https://earthengine.google.com/"><strong>Google Earth Engine</strong></a><br>
+Petabyte-scale archive with server-side processing. Free for academic and research use. The fastest route from question to continental-scale answer, at the cost of working inside someone else’s environment. Interfaces exist for <a href="https://code.earthengine.google.com/">JavaScript</a>, <a href="https://developers.google.com/earth-engine/guides/python_install">Python</a> and <a href="https://r-spatial.github.io/rgee/">R via <code>rgee</code></a>.</p>
+<p><a href="https://planetarycomputer.microsoft.com/"><strong>Microsoft Planetary Computer</strong></a><br>
+STAC-indexed open archive with a hosted JupyterHub. Strong catalogue, fully open data access.</p>
+<p><a href="https://registry.opendata.aws/"><strong>AWS Open Data Registry</strong></a><br>
+Landsat, Sentinel, NAIP and many others staged in S3 as cloud-optimized GeoTIFFs. Requester-pays in some cases.</p>
+<p><a href="https://mlhub.earth/"><strong>Radiant Earth MLHub</strong></a><br>
+Training datasets for machine learning on Earth observation data.</p>
+<p><a href="https://stacindex.org/"><strong>STAC Index</strong></a><br>
+Directory of public SpatioTemporal Asset Catalogs. Increasingly the way to find and query cloud-hosted imagery without downloading anything.</p>
+</section>
+<section id="software" class="level1">
+<h1>Software</h1>
+<p><a href="https://qgis.org/"><strong>QGIS</strong></a><br>
+The desktop GIS. Free, open source, and now genuinely comparable to commercial alternatives for most tasks.</p>
+<p><a href="https://gdal.org/"><strong>GDAL/OGR</strong></a><br>
+The library underneath nearly everything else. Learning the command line tools (<code>gdalwarp</code>, <code>gdal_translate</code>, <code>ogr2ogr</code>) pays for itself quickly.</p>
+<p><a href="https://step.esa.int/main/toolboxes/snap/"><strong>SNAP</strong></a><br>
+ESA’s toolbox for Sentinel data, including the SAR processing chain.</p>
+<p><a href="https://github.com/isce-framework/isce2"><strong>ISCE2</strong></a> and <a href="https://github.com/insarlab/MintPy"><strong>MintPy</strong></a><br>
+InSAR processing and time-series analysis.</p>
+<p><a href="https://pdal.io/"><strong>PDAL</strong></a> and <a href="https://r-lidar.github.io/lidRbook/"><strong>lidR</strong></a><br>
+Point cloud processing, in C++ and R respectively.</p>
+<p><a href="https://www.whiteboxgeo.com/"><strong>Whitebox Tools</strong></a><br>
+Extensive geomorphometry and hydrological terrain analysis, with R and Python bindings.</p>
+<p><a href="https://saga-gis.sourceforge.io/"><strong>SAGA GIS</strong></a><br>
+Terrain analysis, particularly strong on hydrological indices.</p>
+</section>
+<section id="r-packages" class="level1">
+<h1>R packages</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://r-spatial.github.io/sf/"><code>sf</code></a></td>
+<td>Vector data</td>
+</tr>
+<tr class="even">
+<td><a href="https://rspatial.github.io/terra/"><code>terra</code></a></td>
+<td>Raster data (successor to <code>raster</code>)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://r-spatial.github.io/stars/"><code>stars</code></a></td>
+<td>Data cubes and spatiotemporal arrays</td>
+</tr>
+<tr class="even">
+<td><a href="https://r-spatial.github.io/rgee/"><code>rgee</code></a></td>
+<td>Earth Engine from R</td>
+</tr>
+<tr class="odd">
+<td><a href="https://brazil-data-cube.github.io/rstac/"><code>rstac</code></a></td>
+<td>Querying STAC catalogues</td>
+</tr>
+<tr class="even">
+<td><a href="https://r-lidar.github.io/lidRbook/"><code>lidR</code></a></td>
+<td>LiDAR point clouds</td>
+</tr>
+<tr class="odd">
+<td><a href="https://whiteboxr.gishub.org/"><code>whitebox</code></a></td>
+<td>Whitebox Tools bindings</td>
+</tr>
+<tr class="even">
+<td><a href="https://docs.ropensci.org/tidyhydat/"><code>tidyhydat</code></a></td>
+<td>Water Survey of Canada data</td>
+</tr>
+<tr class="odd">
+<td><a href="https://docs.ropensci.org/weathercan/"><code>weathercan</code></a></td>
+<td>ECCC climate station data</td>
+</tr>
+<tr class="even">
+<td><a href="https://bcgov.github.io/bcdata/"><code>bcdata</code></a></td>
+<td>BC Data Catalogue access</td>
+</tr>
+<tr class="odd">
+<td><a href="https://bcgov.github.io/bcmaps/"><code>bcmaps</code></a></td>
+<td>BC administrative and physical boundaries</td>
+</tr>
+<tr class="even">
+<td><a href="https://bcgov.github.io/fasstr/"><code>fasstr</code></a></td>
+<td>Streamflow analysis</td>
+</tr>
+<tr class="odd">
+<td><a href="https://r-tmap.github.io/tmap/"><code>tmap</code></a></td>
+<td>Thematic mapping</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="python-packages" class="level1">
+<h1>Python packages</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://geopandas.org/"><code>geopandas</code></a></td>
+<td>Vector data</td>
+</tr>
+<tr class="even">
+<td><a href="https://rasterio.readthedocs.io/"><code>rasterio</code></a></td>
+<td>Raster I/O</td>
+</tr>
+<tr class="odd">
+<td><a href="https://docs.xarray.dev/"><code>xarray</code></a></td>
+<td>Labelled multidimensional arrays</td>
+</tr>
+<tr class="even">
+<td><a href="https://corteva.github.io/rioxarray/"><code>rioxarray</code></a></td>
+<td>Geospatial extension to xarray</td>
+</tr>
+<tr class="odd">
+<td><a href="https://pystac-client.readthedocs.io/"><code>pystac-client</code></a></td>
+<td>STAC queries</td>
+</tr>
+<tr class="even">
+<td><a href="https://stackstac.readthedocs.io/"><code>stackstac</code></a></td>
+<td>STAC items to xarray</td>
+</tr>
+<tr class="odd">
+<td><a href="https://odc-stac.readthedocs.io/"><code>odc-stac</code></a></td>
+<td>Open Data Cube STAC loading</td>
+</tr>
+<tr class="even">
+<td><a href="https://geemap.org/"><code>geemap</code></a></td>
+<td>Earth Engine with interactive maps</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.dask.org/"><code>dask</code></a></td>
+<td>Parallel and out-of-core computation</td>
+</tr>
+<tr class="even">
+<td><a href="https://pdal.io/en/latest/python.html"><code>pdal</code></a></td>
+<td>Point cloud pipelines</td>
+</tr>
+<tr class="odd">
+<td><a href="https://snowexsql.readthedocs.io/"><code>snowexsql</code></a></td>
+<td>SnowEx field data</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="learning" class="level1">
+<h1>Learning</h1>
+<p><a href="https://r.geocompx.org/"><strong>Geocomputation with R</strong></a><br>
+Free online book, and the best single introduction to spatial analysis in R.</p>
+<p><a href="https://rspatial.org/"><strong>Spatial Data Science with R</strong></a><br>
+Robert Hijmans’ course material, closely tied to <code>terra</code>.</p>
+<p><a href="https://developers.google.com/earth-engine/guides"><strong>Google Earth Engine Developers Guide</strong></a><br>
+Official documentation, worth reading properly rather than copying snippets.</p>
+<p><a href="https://spatialthoughts.com/courses/"><strong>Spatial Thoughts</strong></a><br>
+Well-constructed free courses on QGIS, Earth Engine and Python.</p>
+<p><a href="https://github.com/acgeospatial/awesome-earthobservation-code"><strong>Awesome Earth Observation Code</strong></a><br>
+Community-maintained list of tools and notebooks.</p>
+<p><a href="https://servirglobal.net/resources/sar-handbook"><strong>SAR Handbook (SERVIR)</strong></a><br>
+Practical introduction to SAR, aimed at people who are not radar specialists.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/watershedlab\.ca");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© Alexandre R. Bevington • Prince George, BC • Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

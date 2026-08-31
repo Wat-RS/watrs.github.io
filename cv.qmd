@@ -1,0 +1,149 @@
+---
+title: "Curriculum Vitae"
+pagetitle: "WatRS - CV"
+toc: true
+toc-location: left
+toc-expand: 1
+engine: knitr
+---
+
+**Alexandre R. Bevington**, PhD, PAg\
+Assistant Professor, [Geography, Earth and Environmental Sciences](https://www.unbc.ca/department-geography-earth-and-environmental-sciences)\
+Faculty of Environment, University of Northern British Columbia\
+[alex.bevington@unbc.ca](mailto:alex.bevington@unbc.ca) · [ORCID 0000-0002-9249-4444](https://orcid.org/0000-0002-9249-4444) · [Google Scholar](https://scholar.google.com/citations?user=5SVDaREAAAAJ&hl=en) · [GitHub](https://github.com/bevingtona)
+
+*Last updated `r format(lubridate::today(), "%B %Y")`. A full publication list is on the [Publications](pubs.qmd) page; students and mentees are listed under [People](people.qmd).*
+
+# Education
+
+| Degree | Subject | Institution | Years |
+|---|---|---|---|
+| PhD | Natural Resources and Environmental Studies | University of Northern British Columbia | 2016--2026 |
+| MSc | Physical Geography | University of Ottawa | 2012--2015 |
+| BSc (Hons) | Physical Geography | University of Ottawa | 2007--2011 |
+
+**PhD thesis** (2026) --- *Remote Sensing of Mountain Glaciers in Western North America.* Supervisors: Dr. Brian Menounos and Dr. Marten Geertsema.
+
+**MSc thesis** (2015) --- *Towards a TTOP-Model of Permafrost Distribution, Yukon and Northern British Columbia.* Supervisor: Dr. Antoni Lewkowicz.
+
+**BSc honours thesis** (2011) --- *Characteristics of the Last Five Surges of Lowell Glacier, Yukon.* Supervisor: Dr. Luke Copland.
+
+**Professional designation** --- Licensed Professional Agrologist (PAg), [British Columbia Institute of Agrology](https://bcia.com/), 2019--present.
+
+# Appointments
+
+| Position | Organization | Years |
+|---|---|---|
+| Assistant Professor | University of Northern British Columbia | 2026--present |
+| Lecturer | University of Northern British Columbia | 2025--2026 |
+| Owner | NorthEO Environmental Ltd., Prince George, BC | 2026--present |
+| Research Hydrologist | BC Ministry of Forests, Prince George, BC | 2019--2025 |
+| Research Earth Scientist | BC Ministry of Forests, Prince George, BC | 2015--2019 |
+| College Instructor | Yukon College, Whitehorse, YT | 2013--2014 |
+| Graduate Field Researcher | University of Ottawa / Geological Survey of Canada, Whitehorse, YT | 2010--2014 |
+| Research Assistant | Yukon Research Centre, Whitehorse, YT | 2013 |
+| Teaching Assistant | University of Ottawa, Ottawa, ON | 2013 |
+| Undergraduate Field Assistant | University of Ottawa / Geological Survey of Canada | 2011--2012 |
+| Editorial Assistant, International Polar Year | Aboriginal Affairs and Northern Development Canada | 2012 |
+
+# Awards and distinctions
+
+- **2020** --- New Growth Agrologist of the Year, British Columbia Institute of Agrology
+- **2018** --- NSERC Alexander Graham Bell Canada Graduate Scholarship, Doctoral ($35,000/yr, 2 yrs)
+- **2017** --- UNBC Graduate Student Travel Award ($2,500)
+- **2016** --- UNBC Doctoral Tuition Fee Waiver (4 years)
+- **2014** --- University of Oslo GLACIO-EX: Norwegian Cryosphere Exchange Scholarship ($10,000)
+- **2013** --- National Geographic Young Explorers Grant ($5,000)
+- **2013** --- Weston Award for Northern Research, Association of Canadian Universities for Northern Studies ($15,000)
+- **2013** --- Northern Scientific Training Program, Aboriginal Affairs and Northern Development Canada ($2,820)
+- **2013** --- Research Fellowship, Northern Research Endowment Fund, Yukon Research Centre ($2,500)
+- **2013** --- Norwegian Government High North Fellowship Program ($3,500)
+- **2012** --- University of Ottawa Master's Entrance Scholarship ($17,500/yr, 2 yrs)
+
+# Funding
+
+## Grants
+
+| Agency | Project | Amount | Years | Role |
+|---|---|---|---|---|
+| Nechako Environmental Enhancement Fund | Integrated watershed research in the Nechako River Basin, Phase 4 | $400,000 total | 2026--2028 | Co-I (PIs: E. Martins, S. Déry, P. Owens, F. Garcia-Becerra) |
+| Fish and Wildlife Compensation Program | Thermal regimes of the Upper Peace River Basin | $120,000 total | 2022--2026 | Co-I (PI: B. O'Connor) |
+| UNBC | Research Start-up Fund | $30,000 | 2025 | PI |
+| Fish and Wildlife Compensation Program | Event sponsorship, hydrometric training | $1,500 | 2026 | PI |
+
+## Research contracts
+
+| Agency | Project | Amount | Years |
+|---|---|---|---|
+| BC Ministry of Forests | Remote sensing of snow cover in the Great Bear Rainforest | $35,000 | 2026--2027 |
+| BC Ministry of Forests | Post-wildfire erosion hazards in permafrost terrain | $100,000 | 2026 |
+| BC Ministry of Forests | High-resolution watershed disturbance model | $40,000 | 2026 |
+| BC Ministry of Forests | Hydrometric monitoring | $40,000 | 2026 |
+| BC Ministry of Forests | Remote sensing of snow cover in the Great Bear Rainforest | $33,000 | 2026 |
+
+# Teaching
+
+Courses taught at UNBC are listed on the [Courses, Workshops and Events](courses.qmd) page, along with the workshops and symposia organized since 2016.
+
+## Guest lectures
+
+- **2026** --- *Permafrost does not melt!* (ENSC 454, A. Hawkins, UNBC)
+- **2026** --- *Desktop watershed assessments* (ENSC 402/602, S. Islam and P. Owens, UNBC)
+- **2026** --- *Hydrometric monitoring* (ENSC 402/602, S. Islam and P. Owens, UNBC)
+- **2025** --- *Future trends in remote sensing* (GEOG 357, R. Wheate, UNBC)
+- **2025** --- *Hydrology, the great integrator* (GEOG 310, F. Ali, UNBC)
+- **2022** --- *Remote sensing research and operations in the BC Government* (GEOM 4003, Carleton University)
+
+# Invited presentations
+
+1. Bevington, A.R. 2026. *Watersheds and data.* Upper Fraser Fisheries Conservation Alliance Technical Advisory Committee.
+2. Bevington, A.R. 2026. *Snow cover timing from satellite imagery.* Wild Sheep Foundation --- Thinhorn Summit IV, Prince George, BC.
+3. Bevington, A.R. 2026. *Multi-sensor remote sensing for geohazard detection and monitoring.* Landscapes Through Time, UNBC, Prince George, BC.
+4. Bevington, A.R. 2026. *Using PlanetScope satellite imagery to monitor water, snow and glacier ice in British Columbia.* [Planet Education and Research Seminar](https://www.planet.com/industries/education-and-research/).
+5. Bevington, A.R. 2026. *From the Arctic to northern BC: recent observations from a hydrologist, geospatial scientist and overall optimist.* [NRESi Colloquium](https://video.unbc.ca/media/Alex+Bevington+-+From+the+Arctic+to+Northern+British+Columbia%3A+Recent+observations+from+the+perspective+of+a+hydrologist%2C+geospatial+scientist%2C+and+overall+optimist+-+NRESi+presentation+Friday+6+Feb+2026/0_4el4s9a8/23996), UNBC, Prince George, BC.
+6. Bevington, A.R. 2024. *Tools for drought monitoring in northern rivers.* [Forest Practices Board of British Columbia webinar series](https://www.fpbc.ca/webinar-recordings/tools-drought-monitoring/).
+7. O'Connor, B., S. Islam, **A.R. Bevington** and E. Martins. 2023. *[Investigating thermal regimes of the Upper Peace River Basin](https://video.unbc.ca/media/FWCP%20-%20NRESi%20O%27Connor%20March%201%202023.mp4/0_df83hb0r/23996).* NRESi--FWCP, UNBC.
+8. Bevington, A.R. 2023. **Keynote:** *Realtime data from the field and from space.* Canadian Institute of Forestry banquet.
+9. Bevington, A.R. and B. Menounos. 2023. *[Observations of the transient snowline in western Canada](https://www.youtube.com/watch?v=gRGdRI6voOQ).* Canadian Meteorological and Oceanographic Society.
+10. Bevington, A.R. 2019. **Keynote:** *[The magic of remote sensing](http://nsc-bc.org/wp-content/uploads/2019/03/Bevington.pdf).* Northern Silviculture Committee Winter Conference, Prince George, BC.
+11. Bevington, A.R. 2017. *[The new landscape of satellite remote sensing](https://www2.unbc.ca/events/44824/nresi-colloquium-new-landscape-satellite-remote-sensing-alex-bevington-bc-mflnrord-and-unbc-phd-student).* NRESi Colloquium, UNBC, Prince George, BC.
+
+A fuller list of contributed conference presentations is on the [Publications](pubs.qmd) page.
+
+# Service
+
+## To the university
+
+- GEOG BSc ASC Committee (2026--present)
+- GEOG/GIS ASC Committee (2026--present)
+- GEOG BSc Review Committee (2025--present) --- GIS minor review, BSc progression review
+- GIS Lab Coordinator and Board Member (2025--present) --- augmented reality sandbox project, GIS lab window art, ESRI scholarship administration, lab strategic plan, hardware fundraising
+- Course transfer evaluations (2025--present)
+- GEOG representative, UNBC Discovery Day (2025); UNBC Career Night (2026); invited speaker, UNBC Professional Designation Night (2026)
+
+## Scholarly societies
+
+- International Disaster Charter (2025--present)
+- Canadian Remote Sensing Society (2025--present)
+- North American Association of Stream Hydrographers (2024--present)
+- Canadian Geophysical Union (2018--present)
+- Canadian Permafrost Association (2016--present) --- Board Member, Strategic Planning Committee (2025--present), contributing to the CPA Strategic Plan 2026--2031
+
+## Community
+
+- President, Prince George Backcountry Recreation Society (2019--present)
+- President, Comité Franco-Amis, Prince George, BC (2024--present)
+
+## Editorial and review
+
+**Guest co-editor** --- *Remote Sensing*, special issue on [Google Earth Engine: Cloud-Based Platform for Earth Observation Data and Analysis](https://www.mdpi.com/journal/remotesensing/special_issues/GEE_cloud) (2020).
+
+**Reviewer** --- *Nature Geoscience*, *The Cryosphere*, *Journal of Glaciology*, *Annals of Glaciology*, *Journal of Hydrology*, *Landslides*, *Remote Sensing*, *Scientific Data*, *Confluence: Journal of Watershed Science and Management*, and the BC Government Water Science Series.
+
+## Consulting
+
+Palmer Consulting Group (2016, 2018); BC Ministry of Water, Land and Resource Stewardship (2026); Blueberry River First Nation (2026); Takla First Nation (2026); Society for Ecosystem Restoration of British Columbia (2026).
+
+# Outreach
+
+Media interviews, science communication and public talks are listed on the [Outreach](outreach.qmd) page.

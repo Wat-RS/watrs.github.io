@@ -1,0 +1,64 @@
+---
+title: "Courses, Workshops, and Events"
+pagetitle: "WatRS - Courses and Workshops"
+toc: true
+toc-location: left
+number-sections: false
+---
+
+# Courses
+
+Courses taught at UNBC, most recent term in brackets.
+
+[**GEOG 205** --- Cartography and Geomatics](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=205) [2027 Winter, 2026 Winter]
+
+[**GEOG 357** --- Introduction to Remote Sensing](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=357) [2026 Fall]
+
+[**GEOG 413** --- Advanced GIS](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=413) [2026 Fall]
+
+[**GEOG 450/650** --- Advanced Geospatial Analysis](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=450) [2025 Winter]
+
+[**GEOG 457/657** --- Advanced Remote Sensing](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=457) [2026 Winter, 2024 Winter, 2022 Winter]
+
+# Guest lectures
+
+- Permafrost does not melt! --- ENSC 454, UNBC (2026)
+- Desktop watershed assessments --- ENSC 402/602, UNBC (2026)
+- Hydrometric monitoring --- ENSC 402/602, UNBC (2026)
+- Future trends in remote sensing --- GEOG 357, UNBC (2025)
+- Hydrology, the great integrator --- GEOG 310, UNBC (2025)
+- Remote sensing research and operations in the BC Government --- GEOM 4003, Carleton University (2022)
+
+# Workshops
+
+- **Introduction to Community Hydrometric Monitoring** --- Apr 30--May 1, 2026\
+*UNBC, Prince George, BC*\
+Organized and co-taught with the [Upper Fraser Fisheries Conservation Alliance](https://www.uffca.ca/) a free workshop about hydrometric monitoring at UNBC for 60 participants from First Nations, academia, and government.
+
+- **Northern BC Stream Temperature Symposium** [link](https://hcilab.ca/sts/) --- Nov 20--21, 2025\
+*UNBC, Prince George, BC*\
+Co-organized, with Dr. Siraj ul Islam, a free symposium to share research and information about stream temperature monitoring and modelling in Northern BC.
+
+- **Intermediate Python for Remote Sensing** --- Feb 22--23, 2023\
+*Prince George, BC*\
+Organized and co-taught with SparkGeo Ltd. a free workshop at UNBC for 40 participants from industry, government, academia, and First Nations.
+
+- **R Geospatial Machine Learning Workshop and Hackathon** --- Nov 5--7, 2019\
+*Prince George, BC*\
+Organized and co-taught with Dr. Tomislav Hengl (OpenGeoHub Foundation) a free workshop at the SparkHub for 35 participants from industry, government, academia, and First Nations.
+
+- **Advanced Satellite Remote Sensing Workshop** --- Mar 7--9, 2018\
+*Prince George, BC*\
+Organized and taught a free workshop at the Ministry of Forests offices for 28 participants from industry, government, academia, and First Nations.
+
+- **Introduction to Satellite Remote Sensing Workshop** --- Nov 22--24, 2017\
+*Prince George, BC*\
+Organized and taught a free workshop at the Ministry of Forests offices.
+
+- **Advanced Satellite Remote Sensing Workshop** --- Mar 7--9, 2017\
+*Prince George, BC*\
+Organized and taught a free workshop at the Ministry of Forests offices.
+
+- **Introduction to Satellite Remote Sensing Workshop** --- Jan 19--20, 2017\
+*Prince George, BC*\
+Organized and taught a free workshop at the Ministry of Forests offices.

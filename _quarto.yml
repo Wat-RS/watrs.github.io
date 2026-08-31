@@ -1,0 +1,99 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - academicicons/**
+    - assets/**
+    - images/**
+    - .nojekyll
+    - CNAME
+
+website:
+  title: "Watershed Remote Sensing Lab"
+  site-url: "https://watershedlab.ca"
+  favicon: images/logo/watrs-favicon.png
+  navbar:
+    background: "#ffffff"
+    foreground: "#2e3d44"
+    logo: images/logo/watrs-horizontal.png
+    logo-alt: "Wat-RS — Watershed Remote Sensing Lab"
+    logo-href: index.qmd
+    left:
+      - text: "Research"
+        menu:
+          - text: "Lab"
+            href: index.qmd
+          - text: "People"
+            href: people.qmd
+          - text: "Opportunities"
+            href: opportunities.qmd
+          - text: "Publications"
+            href: pubs.qmd
+          - text: "Outreach"
+            href: outreach.qmd
+          - text: "CV"
+            href: cv.qmd
+      - text: "Resources"
+        menu:
+          - text: "Teaching and workshops"
+            href: courses.qmd
+          - text: "Data and Tools"
+            href: resources.qmd
+      - text: "Apps"
+        menu:
+          - text: "watershedBC"
+            href: https://watershed-rs.shinyapps.io/watershedBC/
+          - text: "RemoteLogger"
+            href: https://watershed-rs.shinyapps.io/remotelogger/
+          - text: "Groundwater Wells"
+            href: https://bcgov-env.shinyapps.io/bc_gw_tools/
+          - text: "EveryImage"
+            href: https://ee-bevingtona.projects.earthengine.app/view/everyimage
+          - text: "MosaicMaker"
+            href: https://ee-bevingtona.projects.earthengine.app/view/mosaic
+          - text: "Water Temperature Explorer"
+            href: https://bevingtona.users.earthengine.app/view/bc-water-surface-temperature-explorer
+    right:
+      - icon: envelope
+        href: mailto:alex.bevington@unbc.ca
+        aria-label: Email
+      - text: "<i class='ai ai-orcid' role='img' aria-label='ORCID'></i>"
+        href: https://orcid.org/0000-0002-9249-4444
+      - text: "<i class='ai ai-google-scholar' role='img' aria-label='Google Scholar'></i>"
+        href: https://scholar.google.com/citations?user=5SVDaREAAAAJ&hl=en
+      - text: "<i class='ai ai-researchgate' role='img' aria-label='ResearchGate'></i>"
+        href: https://www.researchgate.net/profile/Alexandre-Bevington
+      - icon: github
+        href: https://github.com/bevingtona
+        aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/abevingtona
+        aria-label: Twitter
+      - icon: linkedin
+        href: https://www.linkedin.com/in/bevingtona/
+        aria-label: LinkedIn
+  page-footer:
+    center: "© Alexandre R. Bevington • Prince George, BC • Built with [Quarto](https://quarto.org)"
+
+execute:
+  freeze: false
+  cache: false
+  
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="academicicons/css/academicons.min.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+          <meta name="theme-color" content="#0b6a88">
+    toc: false
+    anchor-sections: true
+    link-external-newwindow: true
+    lightbox: true
+
+editor: source

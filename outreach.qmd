@@ -1,0 +1,73 @@
+---
+title: "Outreach and Media"
+pagetitle: "WatRS - Outreach"
+toc: true
+toc-location: left
+---
+
+Research is most useful when it reaches the people who make decisions about water, land and public safety. This page collects media coverage, public talks and science communication from the lab.
+
+# Media
+
+- **2026** 
+
+  - Radio-Canada, *Phare Ouest* avec Marie Villeneuve.\
+  [Comment conserver l'eau dans un contexte de sécheresse?](https://ici.radio-canada.ca/ohdio/premiere/emissions/phare-ouest/segments/rattrapage/2444891/comment-conserver-eau-durant-secheresse-dans-centre-c-b)
+
+  - CBC Radio, *Daybreak North* with Carolina de Ryk.\
+  [UNBC lecturer on optimism and northern watersheds](https://www.cbc.ca/listen/live-radio/1-109-daybreak-north/clip/16196331-unbc-lecturer-optimism-northern-watersheds)
+
+  - *The Northern Voice*, NORS member profile.\
+  [Alexandre Bevington.](https://www.unbc.ca/sites/default/files/sections/northern-studies/202601-northern-voice.pdf)
+
+- **2025** 
+  
+  - Vista Radio, by Zach Barrowcliff.\
+  [UNBC members wrap up two-day stream temperature symposium.](https://www.myprincegeorgenow.com/240142/news/education/unbc/unbc-members-wrap-up-two-day-stream-temperature-symposium/)
+
+  - CFTK TV, by Helen Asante.\
+  [UNBC symposium highlights shifting conditions across northern B.C. watersheds.](https://www.cftktv.com/news/article/unbc-symposium-highlights-shifting-conditions-across-northern-bc-watersheds/)
+
+  - Earth.com, by Chrissy Sexton.\
+  [Klinaklini Glacier in British Columbia.](https://www.earth.com/image/klinaklini-glacier-in-british-columbia-canada/)
+
+  - NASA Landsat Science.\
+  [Landsat shows western Canada's glaciated environments rapidly changing.](https://landsat.gsfc.nasa.gov/article/landsat-shows-western-canadas-glaciated-environments-rapidly-changing/)
+
+- **2022** 
+  - CBC, by Winston Szeto.\
+  [B.C. glaciers melting 7 times faster in past decade than previous years, UNBC study finds.](https://www.cbc.ca/news/canada/british-columbia/glacier-melt-climate-change-unbc-1.6327259)
+
+- **2020** 
+  - CFUR Radio, by Jeremy Morris and Dr. Kristen Kieta. \
+  *The Abstract*, Episode 7: Hydrology and climate change with Alex Bevington.
+
+- **2018** 
+  - European Space Agency. \
+  [Land Remote Sensing Training Course attendee interview.](https://www.youtube.com/watch?v=MibPRQ0UwCc)
+
+# Science communication
+
+- **UNBC Glacier Gallery** (2026) --- [Contributor to a photographic and cartographic exhibit at UNBC about glaciers](https://ckpgtoday.ca/2026/03/18/discover-unbcs-glacier-gallery-curated-by-students-and-faculty/). Lead organizers: Dr. Brian Menounos and Caleb Mathias. Contributors: Dr. Joseph Shea, Dr. Adam Hawkins, Dr. Alexandre Bevington.
+
+- **Alpine Club of Canada, State of the Mountains Report** (2023) --- [Accelerated change in the glaciated environments of western Canada](https://stateofthemountains.ca/state-of-the-mountains-blog/accelerated-change-in-the-glaciated-environments-of-western-canada), with Dr. Brian Menounos.
+
+- **Prince George Public Library, Science Week** (2017) --- *The democratization of satellite remote sensing: implications for the people of British Columbia.*
+
+# Public and invited talks
+
+Selected talks with recordings or slides available:
+
+- [From the Arctic to northern BC: recent observations from a hydrologist, geospatial scientist and overall optimist](https://video.unbc.ca/media/Alex+Bevington+-+From+the+Arctic+to+Northern+British+Columbia%3A+Recent+observations+from+the+perspective+of+a+hydrologist%2C+geospatial+scientist%2C+and+overall+optimist+-+NRESi+presentation+Friday+6+Feb+2026/0_4el4s9a8/23996) --- NRESi Colloquium, UNBC (2026)
+- [Tools for drought monitoring in northern rivers](https://www.fpbc.ca/webinar-recordings/tools-drought-monitoring/) --- Forest Practices Board of BC (2024)
+- [Observations of the transient snowline in western Canada](https://www.youtube.com/watch?v=gRGdRI6voOQ) --- Canadian Meteorological and Oceanographic Society (2023)
+- [The magic of remote sensing](http://nsc-bc.org/wp-content/uploads/2019/03/Bevington.pdf) --- Keynote, Northern Silviculture Committee Winter Conference (2019)
+- [When I fly, I always take the window seat](https://youtu.be/WBWnnkhrCIA) --- BC Government Research Talks (2018)
+
+The complete list of invited presentations is on the [CV](cv.qmd) page.
+
+# Community service
+
+- Member, [Canadian Permafrost Association Strategic Planning Committee](https://canadianpermafrostassociation.ca/Strategic-Plan.htm) (2025--present)
+- President, [Comité Franco-Amis, Prince George, BC](https://franconord.csf.bc.ca/services-ressources/garderie-franco-amis/) (2024--present)
+- President, [Prince George Backcountry Recreation Society](https://www.pgbrs.org) (2019--present)

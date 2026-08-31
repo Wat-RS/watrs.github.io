@@ -1,0 +1,34 @@
+---
+title: "Opportunities"
+pagetitle: "WatRS - Opportunities"
+toc: true
+toc-location: left
+---
+
+The Watershed Remote Sensing Lab is based in [Geography, Earth and Environmental Sciences](https://www.unbc.ca/department-geography-earth-and-environmental-sciences) at UNBC, in Prince George, British Columbia. We work at the intersection of hydrology, the cryosphere, remote sensing and environmental sensor design.
+
+# Graduate students
+
+Prospective graduate students interested in these themes are welcome to get in touch. Graduate work in the lab is normally through the [Natural Resources and Environmental Studies (NRES)](https://www.unbc.ca/graduate-programs/natural-resources-environmental-studies) program at UNBC.
+
+When you write, please include:
+
+- a short description of your research interests and why they fit the lab
+- your CV
+- your academic background and any relevant field, programming or geospatial experience
+
+# Undergraduate students
+
+Undergraduate research assistant positions come up through the academic year and over the summer, including [NSERC Undergraduate Student Research Awards (USRA)](https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards). Current and past assistants are listed on the [People](people.qmd) page. Get in touch if you would like to be considered.
+
+# Postdoctoral researchers
+
+Postdoctoral opportunities depend on available funding and are usually tied to a specific project. If you are considering applying for external fellowship funding and would like to be hosted by the lab, please reach out well before the deadline so we can develop the proposal together.
+
+# Professional mentorship
+
+I mentor articling agrologists through the [BC Institute of Agrology](https://bcia.com/) Professional Agrologist Mentorship Program. Current and past mentees are listed on the [People](people.qmd) page.
+
+# Get in touch
+
+Email [alex.bevington@unbc.ca](mailto:alex.bevington@unbc.ca).

@@ -1,0 +1,70 @@
+---
+title: "People"
+pagetitle: "WatRS - People"
+toc: true
+toc-location: left
+---
+
+The Watershed Remote Sensing Lab is based in [Geography, Earth and Environmental Sciences](https://www.unbc.ca/department-geography-earth-and-environmental-sciences) at the [University of Northern British Columbia](https://www.unbc.ca/). Below are the students, mentees and collaborators I currently work with, along with those who have moved on.
+
+## Lab lead
+
+**Alexandre R. Bevington**, PhD, PAg\
+Assistant Professor, UNBC\
+[CV](cv.qmd) · [alex.bevington\@unbc.ca](mailto:alex.bevington@unbc.ca)
+
+## Graduate students
+
+**Chelton van Geloven**\
+MSc, Natural Resources and Environmental Studies (2023–present)\
+Co-supervisor with Dr. Roger Wheate
+
+## Postdoctoral supervision
+
+**Dr. Kristen Kieta**, 2026\
+Co-supervised with Dr. Philip Owens
+
+## Research assistants
+
+**Siobhan Klassen**, Undergraduate research assistant (2026–present)\
+[NSERC USRA](https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards) recipient, 2026
+
+**James Laing**, Undergraduate research assistant (2026–present)\
+[NSERC USRA](https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards) recipient, 2026
+
+**Krishna Kaffle**, Graduate research assistant (2026–present)\
+Co-supervised with Dr. Siraj ul Islam
+
+**Tehseen Shahbaz**, Undergraduate research assistant (2026–present)\
+Co-supervised with Dr. Siraj ul Islam
+
+**Rachel Pagdin**, Undergraduate research assistant (2026–present)
+
+## Thesis committees
+
+**Serenity Poirier** — MSc NRES (Environmental Science), UNBC. 2026–present.\
+Supervisor: Dr. Stephen Déry.
+
+**Yudel Humberman** — MSc NRES, UNBC. 2026–present.\
+Supervisor: Dr. Oscar Venter.
+
+**Javed Mirzakhel** — MA NRES, UNBC. 2026–present.\
+Supervisor: Dr. Siraj ul Islam.
+
+**Behnoosh Roknaldini Ghaleh Dezh** — MSc NRES, UNBC. 2023–2026.\
+Supervisor: Dr. Siraj ul Islam.
+
+## Professional mentorship
+
+Mentor for articling agrologists through the [BC Institute of Agrology](https://bcia.com/) Professional Agrologist Mentorship Program:
+
+- **Chloe Norton** (2026–present) — EDI Environmental Dynamics Inc.
+- **James Rankin** (2026–present) — Chu Cho Environmental
+- **Kaylee Barnes** (2026–present) — Western Water Associates Ltd.
+- **Drew Gilchrist** (2025–present) — University of Northern British Columbia
+- **Tanya Fearon** (2024–present) — TerraWest Environmental Inc.
+- **Melissa Nitz** (2022–present) — City of Prince George
+
+## Joining the lab
+
+Prospective graduate students and undergraduates interested in hydrology, the cryosphere, remote sensing or environmental sensor design are welcome to get in touch by [email](mailto:alex.bevington@unbc.ca). Please include a short description of your interests and a CV.
