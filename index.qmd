@@ -245,8 +245,8 @@ We work with First Nations, government agencies, fisheries authorities, and acad
 - [BC Energy Regulator](https://www.bc-er.ca/)\
 \
 <b>Academic</b>\
-- [VIU — Coastal Hydrology Research Lab - Dr. Bill Floyd](https://www.viu-hydromet-wx.ca/)\
-- [UNBC — Cryosphere Lab - Dr. Brian Menounos](https://couplet.unbc.ca/)\
-- [UNBC — Mountain Snow Hydrology Lab - Dr. Joseph Shea](https://www.moshlab.org/what-we-do)\
-- [UNBC — Hydroclimate Infomatics Lab - Dr. Siraj ul Islam](https://hcilab.ca/)\
-- [UNBC — Northern Hydrometeorology Group - Dr. Stephen Déry](https://web.unbc.ca/~sdery/)\
+- [VIU — Coastal Hydrology Research Lab](https://www.viu-hydromet-wx.ca/)\
+- [UNBC — Cryosphere Lab](https://couplet.unbc.ca/)\
+- [UNBC — Mountain Snow Hydrology Lab](https://www.moshlab.org/what-we-do)\
+- [UNBC — Hydroclimate Infomatics Lab](https://hcilab.ca/)\
+- [UNBC — Northern Hydrometeorology Group](https://web.unbc.ca/~sdery/)\

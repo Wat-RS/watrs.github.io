@@ -35,19 +35,13 @@ Faculty of Environment, University of Northern British Columbia\
 
 # Appointments
 
-+--------------------------+----------------------------------------------------------------------+----------------------+
-| Position                 | Organization                                                         | Years                |
-+==========================+======================================================================+======================+
-| Assistant Professor      | University of Northern British Columbia                              | 2026--present        |
-+--------------------------+----------------------------------------------------------------------+----------------------+
-| Lecturer                 | University of Northern British Columbia                              | 2025--2026           |
-+--------------------------+----------------------------------------------------------------------+----------------------+
-| Owner                    | [NorthEO Environmental Ltd.](https://northeo.ca/), Prince George, BC | 2026--present        |
-+--------------------------+----------------------------------------------------------------------+----------------------+
-| Research Hydrologist     | BC Ministry of Forests, Prince George, BC                            | 2019--2025           |
-+--------------------------+----------------------------------------------------------------------+----------------------+
-| Research Earth Scientist | BC Ministry of Forests, Prince George, BC                            | 2015--2019           |
-+--------------------------+----------------------------------------------------------------------+----------------------+
+| Position | Organization | Years |
+|----|----|----|
+| Assistant Professor | University of Northern British Columbia | 2026--present |
+| Lecturer | University of Northern British Columbia | 2025--2026 |
+| Owner | [NorthEO Environmental Ltd.](https://northeo.ca/), Prince George, BC | 2026--present |
+| Research Hydrologist | BC Ministry of Forests, Prince George, BC | 2019--2025 |
+| Research Earth Scientist | BC Ministry of Forests, Prince George, BC | 2015--2019 |
 
 # Teaching
 
