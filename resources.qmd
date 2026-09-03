@@ -22,15 +22,15 @@ Found something missing or a dead link? Send it along by [email](mailto:alex.bev
 The provincial starting point. Thousands of datasets covering hydrology, forestry, land use, cadastre and administrative boundaries. Most are available through WMS and WFS endpoints as well as direct download.
 
 [**iMapBC**](https://maps.gov.bc.ca/ess/hm/imap4m/)\
-Browser-based viewer over the provincial data holdings. Useful for quick reconnaissance before committing to a download.
+Browser-based viewer over the provincial data holdings. Outdated and limited interface. Useful for quick reconnaissance before committing to a download.
 
-[**LidarBC Open LiDAR Data Portal**](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/lidarbc)\
+[**LidarBC Open LiDAR Data Portal**](https://lidar.gov.bc.ca/)\
 Provincial LiDAR acquisitions with point clouds, bare-earth DEMs and derived products. Coverage is patchy and concentrated around populated areas, transport corridors and areas of hazard concern.
 
-[**BC Freshwater Atlas**](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-stream-network)\
+[**BC Freshwater Atlas**](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/freshwater)\
 The provincial hydrographic framework — stream network, watershed polygons, lakes, wetlands and linear boundaries. The watershed groups and assessment watersheds are the standard units for most BC work.
 
-[**Vegetation Resources Inventory (VRI)**](https://catalogue.data.gov.bc.ca/dataset/vri-forest-vegetation-composition-polygons-rank-1)\
+[**Vegetation Resources Inventory (VRI)**](https://catalogue.data.gov.bc.ca/dataset/vri-2025-forest-vegetation-composite-polygons)\
 Forest stand attributes: species composition, age, height, crown closure. The backbone of most forest hydrology work in the province.
 
 [**BC Wildfire Perimeters**](https://catalogue.data.gov.bc.ca/dataset/fire-perimeters-historical)\

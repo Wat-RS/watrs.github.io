@@ -5,26 +5,48 @@ toc: true
 toc-location: left
 ---
 
-The Watershed Remote Sensing Lab is based in [Geography, Earth and Environmental Sciences](https://www.unbc.ca/department-geography-earth-and-environmental-sciences) at UNBC, in Prince George, British Columbia. We work at the intersection of hydrology, the cryosphere, remote sensing and environmental sensor design.
+The Watershed Remote Sensing Lab is based in the [Department of Geography, Earth and Environmental Sciences](https://www.unbc.ca/department-geography-earth-and-environmental-sciences) at UNBC, in Prince George, British Columbia. We work at the intersection of watershed hydrology, cryospheric science, remote sensing and environmental sensor design.
 
-# Graduate students
+## Graduate students
 
 Prospective graduate students [**(Master's only at this time)**]{.underline} interested in these themes are welcome to get in touch. Graduate work in the lab is normally through the [Natural Resources and Environmental Studies (NRES)](https://www.unbc.ca/graduate-programs/natural-resources-environmental-studies) program at UNBC.
 
-When you write, please include:
+When you reach out, please include a short description of your research interests and why they fit the lab and your CV, highlighting any relevant fieldwork, programming or geospatial experience.
 
-- a short description of your research interests and why they fit the lab
-- your CV
-- your academic background and any relevant field, programming or geospatial experience
+**Graduate projects [could]{.underline} include the following themes (these are themes, not research questions):**
 
-# Undergraduate students
+- *Remote sensing in watershed science*
+
+  - Advancing the use of lidar in hydrology
+
+  - Testing new satellite sensors for hydrological applications
+
+  - Thermal remote sensing of stream and lake temperature, from drones and from space, including remote-sensing-driven estimates of water temperature
+
+- *Open, low-cost monitoring*
+
+  - Democratizing hydrometric monitoring with open-source software
+
+  - Developing low-cost, DIY, automated water samplers to understand water quality
+
+  - Extending the [RemoteLogger](https://watershed-rs.shinyapps.io/remotelogger/) platforms
+
+- *Hydrology of northern BC*
+
+  - Progress towards a nested physical hydrological model for northern BC
+
+  - The thermal regime of permafrost in northern BC and its impact on hydrology
+
+  - Assessing the impact of glacier change on future water resources in northern BC
+
+  - Extending the [watershedBC](https://watershed-rs.shinyapps.io/watershedBC/) platforms
+
+Students are also welcome to propose their own project within these themes — if your interests overlap with the lab's work, get in touch.
+
+## Undergraduate students
 
 Undergraduate research assistant positions come up through the academic year and over the summer, including [NSERC Undergraduate Student Research Awards (USRA)](https://nserc-crsng.canada.ca/en/funding-opportunity/undergraduate-student-research-awards). Current and past assistants are listed on the [People](people.qmd) page. Get in touch if you would like to be considered.
 
-# Professional mentorship
+## Professional mentorship
 
 I mentor articling agrologists through the [BC Institute of Agrology](https://bcia.com/) Professional Agrologist Mentorship Program. Current and past mentees are listed on the [People](people.qmd) page.
-
-# Get in touch
-
-Email [alex.bevington\@unbc.ca](mailto:alex.bevington@unbc.ca).
