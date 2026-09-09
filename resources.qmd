@@ -4,6 +4,9 @@ pagetitle: "WatRS - Data and Tools"
 toc: true
 toc-location: left
 number-sections: false
+format:
+  html:
+    include-after-body: _includes/collapsible-sections.html
 ---
 
 A working list of the data sources and tools we use in the lab. It leans toward British Columbia and western Canada, but the global sections apply anywhere. Everything here is free to access, though some sources require registration.
@@ -113,6 +116,11 @@ Fast visual browsing and comparison of Sentinel, Landsat and MODIS. Good for sco
 
 [**Maxar Open Data Program**](https://www.maxar.com/open-data)\
 Very high resolution imagery released for major disaster events. Occasionally relevant for landslide and flood response.
+
+# Remote sensing of algae {#cyano-algae}
+
+[**Cyanobacteria Assessment Network (CyAN)**](https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan)\
+CyAN is a multi-agency project to develop an early warning indicator system to detect algal blooms in U.S. freshwater systems. 
 
 # SAR and InSAR
 
@@ -259,7 +267,7 @@ Terrain analysis, particularly strong on hydrological indices.
 | [`pdal`](https://pdal.io/en/latest/python.html) | Point cloud pipelines |
 | [`snowexsql`](https://snowexsql.readthedocs.io/) | SnowEx field data |
 
-# Learning
+# Other Resources
 
 [**Geocomputation with R**](https://r.geocompx.org/)\
 Free online book, and the best single introduction to spatial analysis in R.

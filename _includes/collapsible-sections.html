@@ -1,0 +1,203 @@
+<style>
+/* Collapsible level-1 sections ------------------------------------------- */
+
+.section-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.section-controls button {
+  font-size: 0.8rem;
+  font-family: inherit;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.section-controls button:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+section.collapsible > details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+section.collapsible > details > summary::-webkit-details-marker {
+  display: none;
+}
+
+section.collapsible > details > summary:hover {
+  border-bottom-color: rgba(0, 0, 0, 0.35);
+}
+
+section.collapsible > details > summary > h1,
+section.collapsible > details > summary > h2 {
+  display: inline;
+  margin: 0;
+  border-bottom: none;
+  padding: 0;
+}
+
+/* Chevron rotates when the section opens. */
+section.collapsible > details > summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.55em;
+  height: 0.55em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  opacity: 0.45;
+  transition: transform 0.15s ease;
+  align-self: center;
+}
+
+section.collapsible > details[open] > summary::before {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section.collapsible > details > summary::before { transition: none; }
+}
+
+section.collapsible > details > .section-body {
+  padding-top: 0.5rem;
+}
+
+summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Print the whole page, whatever is open on screen. */
+@media print {
+  .section-controls { display: none; }
+  section.collapsible > details > summary::before { display: none; }
+  section.collapsible > details:not([open]) > .section-body { display: block; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  // Which heading level becomes collapsible. This page uses "#" headings,
+  // which Quarto renders as section.level1.
+  var LEVEL = "level1";
+  var START_OPEN = false;
+
+  var main = document.querySelector("main") || document.body;
+  var sections = Array.prototype.slice.call(
+    main.querySelectorAll("section." + LEVEL)
+  ).filter(function (s) {
+    return s.querySelector(":scope > h1, :scope > h2");
+  });
+
+  if (!sections.length) return;
+
+  sections.forEach(function (section) {
+    var heading = section.querySelector(":scope > h1, :scope > h2");
+
+    var details = document.createElement("details");
+    var summary = document.createElement("summary");
+    var body = document.createElement("div");
+    body.className = "section-body";
+
+    // Everything after the heading becomes the body.
+    var node = heading.nextSibling;
+    while (node) {
+      var next = node.nextSibling;
+      body.appendChild(node);
+      node = next;
+    }
+
+    summary.appendChild(heading);
+    details.appendChild(summary);
+    details.appendChild(body);
+    details.open = START_OPEN;
+
+    // Quarto injects an anchor link into each heading. Clicking it should
+    // copy the link, not fold the section shut.
+    summary.addEventListener("click", function (e) {
+      var link = e.target.closest("a");
+      if (!link) return;
+      e.preventDefault();
+      if (link.hash) {
+        window.location.hash = link.hash;
+      } else {
+        window.location.href = link.href;
+      }
+    });
+
+    section.appendChild(details);
+    section.classList.add("collapsible");
+  });
+
+  // Expand / collapse all -----------------------------------------------
+  var allDetails = main.querySelectorAll("section.collapsible > details");
+
+  function setAll(open) {
+    allDetails.forEach(function (d) { d.open = open; });
+  }
+
+  var controls = document.createElement("div");
+  controls.className = "section-controls";
+
+  [["Expand all", true], ["Collapse all", false]].forEach(function (pair) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = pair[0];
+    btn.addEventListener("click", function () { setAll(pair[1]); });
+    controls.appendChild(btn);
+  });
+
+  sections[0].parentNode.insertBefore(controls, sections[0]);
+
+  // Open a section when it is linked to, from the TOC or from anywhere else,
+  // then bring it into view.
+  function revealHash(scroll) {
+    var id = decodeURIComponent(window.location.hash.slice(1));
+    if (!id) return;
+
+    var target = document.getElementById(id);
+    if (!target) return;
+
+    var section = target.closest("section.collapsible") ||
+      (target.matches("section.collapsible") ? target : null);
+
+    if (section) {
+      section.querySelector(":scope > details").open = true;
+    }
+
+    if (scroll) {
+      requestAnimationFrame(function () {
+        target.scrollIntoView({ block: "start" });
+      });
+    }
+  }
+
+  window.addEventListener("hashchange", function () { revealHash(true); });
+  revealHash(true);
+
+  // Find-in-page: browsers that support hidden="until-found" will open a
+  // closed <details> on match. Older ones will not, so a search that comes up
+  // empty is worth a nudge.
+  if (!("onbeforematch" in document.body)) {
+    controls.setAttribute(
+      "title",
+      "Your browser cannot search inside collapsed sections. Expand all first."
+    );
+  }
+})();
+</script>

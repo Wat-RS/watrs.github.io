@@ -229,6 +229,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#canada" id="toc-canada" class="nav-link" data-scroll-target="#canada">Canada</a></li>
   <li><a href="#lidar-and-elevation" id="toc-lidar-and-elevation" class="nav-link" data-scroll-target="#lidar-and-elevation">LiDAR and elevation</a></li>
   <li><a href="#optical-satellite-imagery" id="toc-optical-satellite-imagery" class="nav-link" data-scroll-target="#optical-satellite-imagery">Optical satellite imagery</a></li>
+  <li><a href="#cyano-algae" id="toc-cyano-algae" class="nav-link" data-scroll-target="#cyano-algae">Remote sensing of algae</a></li>
   <li><a href="#sar-and-insar" id="toc-sar-and-insar" class="nav-link" data-scroll-target="#sar-and-insar">SAR and InSAR</a></li>
   <li><a href="#snow-ice-and-permafrost" id="toc-snow-ice-and-permafrost" class="nav-link" data-scroll-target="#snow-ice-and-permafrost">Snow, ice and permafrost</a></li>
   <li><a href="#climate-and-weather" id="toc-climate-and-weather" class="nav-link" data-scroll-target="#climate-and-weather">Climate and weather</a></li>
@@ -237,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
   <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
   <li><a href="#python-packages" id="toc-python-packages" class="nav-link" data-scroll-target="#python-packages">Python packages</a></li>
-  <li><a href="#learning" id="toc-learning" class="nav-link" data-scroll-target="#learning">Learning</a></li>
+  <li><a href="#other-resources" id="toc-other-resources" class="nav-link" data-scroll-target="#other-resources">Other Resources</a></li>
   </ul>
 </nav>
 </nav>
@@ -353,6 +354,11 @@ PlanetScope daily imagery at roughly 3 m, free for qualifying academic use under
 Fast visual browsing and comparison of Sentinel, Landsat and MODIS. Good for scoping dates before writing any code.</p>
 <p><a href="https://www.maxar.com/open-data"><strong>Maxar Open Data Program</strong></a><br>
 Very high resolution imagery released for major disaster events. Occasionally relevant for landslide and flood response.</p>
+</section>
+<section id="cyano-algae" class="level1">
+<h1>Remote sensing of algae</h1>
+<p><a href="https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan"><strong>Cyanobacteria Assessment Network (CyAN)</strong></a><br>
+CyAN is a multi-agency project to develop an early warning indicator system to detect algal blooms in U.S. freshwater systems.</p>
 </section>
 <section id="sar-and-insar" class="level1">
 <h1>SAR and InSAR</h1>
@@ -560,8 +566,8 @@ Terrain analysis, particularly strong on hydrological indices.</p>
 </tbody>
 </table>
 </section>
-<section id="learning" class="level1">
-<h1>Learning</h1>
+<section id="other-resources" class="level1">
+<h1>Other Resources</h1>
 <p><a href="https://r.geocompx.org/"><strong>Geocomputation with R</strong></a><br>
 Free online book, and the best single introduction to spatial analysis in R.</p>
 <p><a href="https://rspatial.org/"><strong>Spatial Data Science with R</strong></a><br>
@@ -579,6 +585,411 @@ Practical introduction to SAR, aimed at people who are not radar specialists.</p
 </section>
 
 </main> <!-- /main -->
+<style>
+
+/* Collapsible level-1 sections ------------------------------------------- */
+
+
+
+.section-controls {
+
+  display: flex;
+
+  gap: 0.75rem;
+
+  margin: 1.5rem 0 0.5rem;
+
+}
+
+
+
+.section-controls button {
+
+  font-size: 0.8rem;
+
+  font-family: inherit;
+
+  padding: 0.3rem 0.75rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.18);
+
+  border-radius: 3px;
+
+  background: transparent;
+
+  color: inherit;
+
+  cursor: pointer;
+
+}
+
+
+
+.section-controls button:hover {
+
+  border-color: rgba(0, 0, 0, 0.4);
+
+  background: rgba(0, 0, 0, 0.03);
+
+}
+
+
+
+section.collapsible > details > summary {
+
+  list-style: none;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 0.6rem;
+
+  padding: 0.5rem 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+}
+
+
+
+section.collapsible > details > summary::-webkit-details-marker {
+
+  display: none;
+
+}
+
+
+
+section.collapsible > details > summary:hover {
+
+  border-bottom-color: rgba(0, 0, 0, 0.35);
+
+}
+
+
+
+section.collapsible > details > summary > h1,
+
+section.collapsible > details > summary > h2 {
+
+  display: inline;
+
+  margin: 0;
+
+  border-bottom: none;
+
+  padding: 0;
+
+}
+
+
+
+/* Chevron rotates when the section opens. */
+
+section.collapsible > details > summary::before {
+
+  content: "";
+
+  flex: 0 0 auto;
+
+  width: 0.55em;
+
+  height: 0.55em;
+
+  border-right: 2px solid currentColor;
+
+  border-bottom: 2px solid currentColor;
+
+  transform: rotate(-45deg);
+
+  opacity: 0.45;
+
+  transition: transform 0.15s ease;
+
+  align-self: center;
+
+}
+
+
+
+section.collapsible > details[open] > summary::before {
+
+  transform: rotate(45deg);
+
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  section.collapsible > details > summary::before { transition: none; }
+
+}
+
+
+
+section.collapsible > details > .section-body {
+
+  padding-top: 0.5rem;
+
+}
+
+
+
+summary:focus-visible {
+
+  outline: 2px solid currentColor;
+
+  outline-offset: 2px;
+
+}
+
+
+
+/* Print the whole page, whatever is open on screen. */
+
+@media print {
+
+  .section-controls { display: none; }
+
+  section.collapsible > details > summary::before { display: none; }
+
+  section.collapsible > details:not([open]) > .section-body { display: block; }
+
+}
+
+</style>
+
+
+
+<script>
+
+(function () {
+
+  "use strict";
+
+
+
+  // Which heading level becomes collapsible. This page uses "#" headings,
+
+  // which Quarto renders as section.level1.
+
+  var LEVEL = "level1";
+
+  var START_OPEN = false;
+
+
+
+  var main = document.querySelector("main") || document.body;
+
+  var sections = Array.prototype.slice.call(
+
+    main.querySelectorAll("section." + LEVEL)
+
+  ).filter(function (s) {
+
+    return s.querySelector(":scope > h1, :scope > h2");
+
+  });
+
+
+
+  if (!sections.length) return;
+
+
+
+  sections.forEach(function (section) {
+
+    var heading = section.querySelector(":scope > h1, :scope > h2");
+
+
+
+    var details = document.createElement("details");
+
+    var summary = document.createElement("summary");
+
+    var body = document.createElement("div");
+
+    body.className = "section-body";
+
+
+
+    // Everything after the heading becomes the body.
+
+    var node = heading.nextSibling;
+
+    while (node) {
+
+      var next = node.nextSibling;
+
+      body.appendChild(node);
+
+      node = next;
+
+    }
+
+
+
+    summary.appendChild(heading);
+
+    details.appendChild(summary);
+
+    details.appendChild(body);
+
+    details.open = START_OPEN;
+
+
+
+    // Quarto injects an anchor link into each heading. Clicking it should
+
+    // copy the link, not fold the section shut.
+
+    summary.addEventListener("click", function (e) {
+
+      var link = e.target.closest("a");
+
+      if (!link) return;
+
+      e.preventDefault();
+
+      if (link.hash) {
+
+        window.location.hash = link.hash;
+
+      } else {
+
+        window.location.href = link.href;
+
+      }
+
+    });
+
+
+
+    section.appendChild(details);
+
+    section.classList.add("collapsible");
+
+  });
+
+
+
+  // Expand / collapse all -----------------------------------------------
+
+  var allDetails = main.querySelectorAll("section.collapsible > details");
+
+
+
+  function setAll(open) {
+
+    allDetails.forEach(function (d) { d.open = open; });
+
+  }
+
+
+
+  var controls = document.createElement("div");
+
+  controls.className = "section-controls";
+
+
+
+  [["Expand all", true], ["Collapse all", false]].forEach(function (pair) {
+
+    var btn = document.createElement("button");
+
+    btn.type = "button";
+
+    btn.textContent = pair[0];
+
+    btn.addEventListener("click", function () { setAll(pair[1]); });
+
+    controls.appendChild(btn);
+
+  });
+
+
+
+  sections[0].parentNode.insertBefore(controls, sections[0]);
+
+
+
+  // Open a section when it is linked to, from the TOC or from anywhere else,
+
+  // then bring it into view.
+
+  function revealHash(scroll) {
+
+    var id = decodeURIComponent(window.location.hash.slice(1));
+
+    if (!id) return;
+
+
+
+    var target = document.getElementById(id);
+
+    if (!target) return;
+
+
+
+    var section = target.closest("section.collapsible") ||
+
+      (target.matches("section.collapsible") ? target : null);
+
+
+
+    if (section) {
+
+      section.querySelector(":scope > details").open = true;
+
+    }
+
+
+
+    if (scroll) {
+
+      requestAnimationFrame(function () {
+
+        target.scrollIntoView({ block: "start" });
+
+      });
+
+    }
+
+  }
+
+
+
+  window.addEventListener("hashchange", function () { revealHash(true); });
+
+  revealHash(true);
+
+
+
+  // Find-in-page: browsers that support hidden="until-found" will open a
+
+  // closed <details> on match. Older ones will not, so a search that comes up
+
+  // empty is worth a nudge.
+
+  if (!("onbeforematch" in document.body)) {
+
+    controls.setAttribute(
+
+      "title",
+
+      "Your browser cannot search inside collapsed sections. Expand all first."
+
+    );
+
+  }
+
+})();
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
