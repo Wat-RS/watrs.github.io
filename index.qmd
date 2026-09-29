@@ -14,6 +14,22 @@ News
 :::
 
 :::: news-item
+[<i class="bi bi-image"></i>]{.news-thumb .news-thumb-outreach}
+
+::: news-text
+[October 2026]{.news-date} Built an [AR Sandbox](https://www.instagram.com/p/DdCDjoRztTslzEZmGxkPtpwIVmWb0nsVE-Ti880/) using [MagicSand](https://github.com/thomwolf/magic-sand)! 
+:::
+::::
+
+:::: news-item
+[<i class="bi bi-people"></i>]{.news-thumb .news-thumb-event}
+
+::: news-text
+[September 2026]{.news-date} Start of the teaching semester: [Introduction to Remote Sensing](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=357) and [Advanced GIS](https://tools.unbc.ca/course-catalogue/?subj=GEOG&crse=413)! 
+:::
+::::
+
+:::: news-item
 [<i class="bi bi-journal-text"></i>]{.news-thumb .news-thumb-paper}
 
 ::: news-text
