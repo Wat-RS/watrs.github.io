@@ -113,7 +113,7 @@ News
 [<i class="bi bi-mortarboard"></i>]{.news-thumb .news-thumb-lab}
 
 ::: news-text
-[2026]{.news-date} Dr. Kristen Kieta joined as a [postdoctoral researcher](people.qmd), co-supervised with Dr. Philip Owens.
+[2026]{.news-date} Dr. Kristen Kieta joined the field season as a [postdoctoral researcher](people.qmd), supervised with Dr. Philip Owens.
 :::
 ::::
 
