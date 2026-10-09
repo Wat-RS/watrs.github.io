@@ -13,7 +13,11 @@ Prospective graduate students [**(Master's only at this time)**]{.underline} int
 
 When you reach out, please include a short description of your research interests and why they fit the lab and your CV, highlighting any relevant fieldwork, programming or geospatial experience.
 
-**Graduate projects [could]{.underline} include the following themes (these are themes, not research questions):**
+**Current graduate postings**
+
+- [Funded 2 yr MSc at UNBC - Glaciers, Snowpacks, and First Nations water security](https://www.moshlab.org/news/funded-2-yr-msc-at-unbc-glaciers-snowpacks-and-first-nations-water-security)
+
+**Future graduate projects [could]{.underline} include the following themes (these are themes, not research questions):**
 
 - *Remote sensing in watershed science*
 
