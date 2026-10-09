@@ -73,7 +73,7 @@ website:
         href: https://www.linkedin.com/company/142884678/
         aria-label: LinkedIn
   page-footer:
-    center: "© Alexandre R. Bevington • Prince George, BC • Built with [Quarto](https://quarto.org)"
+    center: "© Alexandre R. Bevington"
 
 execute:
   freeze: false
