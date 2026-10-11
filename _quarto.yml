@@ -42,7 +42,7 @@ website:
       - text: "Apps"
         menu:
           - text: "watershedBC"
-            href: https://watershed-rs.shinyapps.io/watershedBC/
+            href: https://watershedBC.ca/
           - text: "RemoteLogger"
             href: https://watershed-rs.shinyapps.io/remotelogger/
           - text: "Groundwater Wells"
