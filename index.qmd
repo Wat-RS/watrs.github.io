@@ -7,11 +7,19 @@ format:
     toc-location: left
 ---
 
-:::::::::::::::::::::::::::::::::::::::: column-margin
-::::::::::::::::::::::::::::::::::::::: news-scroll
+:::::::::::::::::::::::::::::::::::::::::: column-margin
+::::::::::::::::::::::::::::::::::::::::: news-scroll
 ::: news-head
 News
 :::
+
+:::: news-item
+[<i class="bi bi-image"></i>]{.news-thumb .news-thumb-outreach}
+
+::: news-text
+[October 2026]{.news-date} Many updates to [watershedBC](https://www.watershedbc.ca/)!
+:::
+::::
 
 :::: news-item
 [<i class="bi bi-image"></i>]{.news-thumb .news-thumb-outreach}
@@ -160,8 +168,8 @@ News
 ::: news-more
 Full lists: [publications](pubs.qmd) · [outreach and media](outreach.qmd) · [workshops](courses.qmd)
 :::
-:::::::::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::
 
 ![](images/2019-02-12_0029_circle.jpg)
 
@@ -193,7 +201,7 @@ We are developing modular, low-cost, and low-power data loggers for hydrological
 ## Project information
 
 *Interactive watershed information platform*\
-<https://bcgov-env.shinyapps.io/watershedBC/>\
+<https://www.watershedBC.ca/>\
 WatershedBC is an open-access decision-support tool that enables users to quickly visualize and extract key information about watersheds across British Columbia. Designed for practitioners, researchers, and the public, it leverages provincial datasets and automated workflows to deliver insights on hydrology, land cover, and climate attributes at nested watershed scales. The goal is to create a framework for rapid watershed characterization that will evolve as new models and datasets emerge.
 :::
 
